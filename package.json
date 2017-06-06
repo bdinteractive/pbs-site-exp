@@ -1,0 +1,10 @@
+{
+  "name": "pbs-statation-exp",
+  "version": "0.0.1",
+  "description": "A PBS Site Experience using Bootstrap",
+  "author": "Brad Dedon",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {}
+}
