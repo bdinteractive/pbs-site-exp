@@ -1,0 +1,36 @@
+.page-header .page-header-menu {
+    
+}
+.page-header {
+  height: 52px;
+}
+.page-head {
+  padding-bottom: 50px;
+}
+
+
+
+
+
+.page-head .pbs-video-thumbnail {
+  margin-top: 19px;
+}
+.pbs-video-thumbnail {
+  width: 240px;
+  height: 160px;
+  padding-top: 40px;
+  cursor: pointer;
+
+  background-color: #ccc;
+  text-align: center;
+}
+.pbs-video-thumbnail div {
+  background-color: white;
+  border-radius: 50% !important;
+  padding: 20px;
+}
+.pbs-video-thumbnail h5 {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
