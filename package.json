@@ -4,13 +4,14 @@
   "description": "A PBS Site Experience using Bootstrap",
   "author": "Brad Dedon",
   "devDependencies": {
-    "gulp": "^3.9.1",
     "grunt": "~0.4.5",
+    "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0",
-    "grunt-contrib-compass": "^1.1.1",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.6"
