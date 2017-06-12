@@ -1,3 +1,28 @@
+
+@font-face {
+    font-family: 'socicon';
+    src: url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.eot');
+    src: url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.woff') format('woff'),
+         url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.woff2') format('woff2'),
+         url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.ttf') format('truetype'),
+         url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
+
+.socicons {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+
+
+
+
+
 .page-header .page-header-menu {
     
 }
@@ -10,7 +35,7 @@
 
 
 
-
+/* Workplace Component */
 
 .page-head .pbs-video-thumbnail {
   margin-top: 19px;
@@ -34,3 +59,64 @@
   font-weight: bold;
   font-size: 14px;
 }
+
+
+
+/* Most Popular Component */
+
+.pbs-mostPopular {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.pbs-mostPopular__nav {
+  display: flex;
+  align-items: stretch;
+}
+.pbs-mostPopular__title {
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+.pbs-mostPopular__link {
+  color: white;
+  flex-grow: 1;
+}
+.pbs-mostPopular__link:after {
+  content: "-";
+  margin-left: 26px;
+}
+.pbs-mostPopular__link:last-child:after {
+  content: "";
+}
+.pbs-mostPopular__link:hover {
+  color: white;
+}
+
+
+
+
+/* Department Component */
+
+.pbs-department {
+  
+}
+.pbs-department__title {
+  text-align: center;
+}
+.pbs-department__subTitle {
+  text-align: center;
+  text-transform: uppercase;
+}
+.pbs-department__content {
+  border-top: #ccc solid 1px;
+  border-bottom: #ccc solid 1px;
+  padding: 15px 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
