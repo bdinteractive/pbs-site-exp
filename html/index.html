@@ -8,6 +8,7 @@
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
     <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -15,15 +16,17 @@
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" /> -->
     <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet" type="text/css" />
+    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS -->
 
     <!-- BEGIN THEME GLOBAL STYLES -->
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="../theme/metronic_v4.7.5/theme/assets/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
     <link href="../theme/metronic_v4.7.5/theme/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
     <!-- END THEME GLOBAL STYLES -->
 
@@ -50,7 +53,7 @@
             <div class="page-header-menu">
               <div class="container">
 
-                <div class="hor-menu">
+                <div class="hor-menu pull-right">
                   <ul class="nav navbar-nav">
                     <li aria-haspopup="true" class="">
                       <a href="#nav-resources">Resources</a>
@@ -59,7 +62,7 @@
                       <a href="#nav-events">Events</a>
                     </li>
                     <li aria-haspopup="true" class="">
-                      <a href="#nav-newsletter">Newsletter</a>
+                      <a href="#nav-newsletters">Newsletters</a>
                     </li>
                     <li aria-haspopup="true" class="">
                       <a href="#nav-faq">FAQ</a>
@@ -67,11 +70,6 @@
                     <li aria-haspopup="true" class="">
                       <a href="#nav-help">Help</a>
                     </li>
-                  </ul>
-                </div><!-- /end - hor-menu -->
-
-                <div class="hor-menu pull-right">
-                  <ul class="nav navbar-nav">
                     <li aria-haspopup="true" class="">
                       <a href="javascript:;">Search for People</a>
                     </li>
@@ -91,303 +89,555 @@
         <div class="page-container">
           <div class="page-content-wrapper">
 
-            <div class="page-head">
+
+
+
+
+
+            <div class="page-head pbs-page-head">
               <div class="container">
                 <div class="row">
 
-
-
-                  <div class="col-md-9">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <h1>My PBS Digital Workplace</h1>
-                          <ul>
-                            <li><a href="#">Sign up for newsletters</a></li>
-                            <li>Know your<a href="#"> advisory councils</a></li>
-                          </ul>
-                        </div>
-                      </div>
+                  <div class="col-md-12">
+                    <h1 class="pbs-page-head__title">Member Station Digital Workplace</h1>
+                    <p class="pbs-page-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta ante in ex tristique, et posuere nunc suscipit. Quisque vestibulum viverra congue. Morbi vestibulum, lacus non varius sollicitudin, mi massa cursus libero, ac fermentum.</p>
+                    
+                    <div class="pbs-page-head__btn-group">
+                      <button class="btn pbs-page-head__btn btn-lg" type="button">Sign Up For Newsletters</button>
+                      <button class="btn pbs-page-head__btn btn-lg" type="button">Know Your Advisory Councils</button>
                     </div>
-                  </div>
 
-                  <div class="col-md-3">
-                    <div class="pbs-video-thumbnail">
-                      <div class="glyphicon glyphicon-play" aria-hidden="true"></div>
-                      <h5>myPBS 101</h5>
+                    <div class="pbs-page-head__video">
+                      <button class="btn pbs-page-head__btn pbs-page-head__btn--play btn-lg" type="button"><i class="glyphicon glyphicon-play" aria-hidden="true"></i></button>
+                      <h5 class="pbs-page-head__playBtnText">Watch MyPBS 101</h5>
                     </div>
-                  </div>
 
+                  </div>
 
                 </div><!-- end - row -->
               </div><!-- end - container -->
             </div><!-- end - page-head -->
 
+
+
+
+
             <div class="page-content">
-              <div class="container">
+
+              <div id="nav-resources" class="container pbs-section--header">
+                <div class="page-content-inner">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="pbs-section__title">PBS Station Resources &amp; Information</h2>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
+
+              <div class="container-wide">
+                <div class="page-content-inner">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="pbs-mostPopular">
+                        <nav class="pbs-mostPopular__nav container">
+                          <span class="pbs-mostPopular__title">Most Popular: </span>
+                          <a class="pbs-mostPopular__link" href="#">Bento</a>
+                          <a class="pbs-mostPopular__link" href="#">Cove</a>
+                          <a class="pbs-mostPopular__link" href="#">Broadcast Schedule</a>
+                          <a class="pbs-mostPopular__link" href="#">Station Management Center</a>
+                          <a class="pbs-mostPopular__link" href="#">The Source</a>
+                          <a class="pbs-mostPopular__link" href="#">PBS Logos</a>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
+
+              <div class="container pbs-section">
+                <div class="page-content-inner">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <nav class="pbs-section__buttonGroup">
+                        <button id="js__departmentVisible" class="btn pbs-btn pbs-btn--primary btn-lg" type="button">
+                          <i class="fa fa-minus" aria-hidden="true"></i> Hide Descriptions
+                        </button>
+                        <button class="btn pbs-btn pbs-btn--primary btn-lg" type="button">View Applications Only</button>
+                      </nav>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="">
+                        <div class="">
+                          <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                              <div class="pbs-department">
+                                <div class="pbs-department__header">
+                                  <h3 class="pbs-department__title">Corporate Comms.</h3>
+                                  <h4 class="pbs-department__sub-title">Communications PBS Mission &amp; Activity</h4>
+                                </div>
+                                <div class="pbs-department__content">
+                                  <div class="js__department pbs-department__description">
+                                    <p>Manages external corporate communications to partners, donars, press and the public in a way that is cohesive, constitant, credible, and best represents the PBS mission.</p>
+                                    <a href="#" data-toggle="modal" data-target="#department">Read More ›</a>
+                                  </div>
+                                  <ul class="pbs-list pbs-list--content">
+                                    <li class="pbs-list__item"><a href="#">Program Priorities  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS Local Connections Map  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Notable Press Releases  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS Pressroom  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">IPG Listings  ›</a></li>
+                                  </ul>
+                                </div>
+                                <div class="socicons">
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                              <div class="pbs-department">
+                                <div class="pbs-department__header">
+                                  <h3 class="pbs-department__title">KIDS & Education</h3>
+                                  <h4 class="pbs-department__sub-title">ENTERTAINMENT & EDUCATION FOR KIDS</h4>
+                                </div>
+                                <div class="pbs-department__content">
+                                  <div class="js__department pbs-department__description">
+                                    <p>Makes a positive impact on the lives of children through full spectrum of media & technology to build knowledge, critical thinking, imagination and curiosity.</p>
+                                   <a href="#" data-toggle="modal" data-target="#department">Read More ›</a>
+                                  </div>
+                                  <ul class="pbs-list pbs-list--content">
+                                    <li class="pbs-list__item"><a href="#">PBS Education Information  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS KIDS Digital  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS KIDS 24/7 Assistance  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">CM&E Engagement Resources  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">2017 Programming Priorities  ›</a></li>
+                                  </ul>
+                                </div>
+                                <div class="socicons">
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                              <div class="pbs-department">
+                                <div class="pbs-department__header">
+                                  <h3 class="pbs-department__title">Development Services</h3>
+                                  <h4 class="pbs-department__sub-title">STATION FUNDING TO GROW FINANCES</h4>
+                                </div>
+                                <div class="pbs-department__content">
+                                  <div class="js__department pbs-department__description">
+                                    <p>Provides professional services, innovative fundraising tactics, and resources to enhance individual giving activities and increase financial sustainability.</p>
+                                    <a href="#" data-toggle="modal" data-target="#department">Read More ›</a>
+                                  </div>
+                                  <ul class="pbs-list pbs-list--content">
+                                    <li class="pbs-list__item"><a href="#">On Air Fundraising  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Corporate Support Library  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Development Contacts List  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Newsletters Archive  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Development Services Website  ›</a></li>
+                                  </ul>
+                                </div>
+                                <div class="socicons">
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                              <div class="pbs-department">
+                                <div class="pbs-department__header">
+                                  <h3 class="pbs-department__title">Corporate Comms.</h3>
+                                  <h4 class="pbs-department__sub-title">Communications PBS Mission &amp; Activity</h4>
+                                </div>
+                                <div class="pbs-department__content">
+                                  <div class="js__department pbs-department__description">
+                                    <p>Manages external corporate communications to partners, donars, press and the public in a way that is cohesive, constitant, credible, and best represents the PBS mission.</p>
+                                    <a href="#" data-toggle="modal" data-target="#department">Read More ›</a>
+                                  </div>
+                                  <ul class="pbs-list pbs-list--content">
+                                    <li class="pbs-list__item"><a href="#">Program Priorities  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS Local Connections Map  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Notable Press Releases  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS Pressroom  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">IPG Listings  ›</a></li>
+                                  </ul>
+                                </div>
+                                <div class="socicons">
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                              <div class="pbs-department">
+                                <div class="pbs-department__header">
+                                  <h3 class="pbs-department__title">KIDS & Education</h3>
+                                  <h4 class="pbs-department__sub-title">ENTERTAINMENT & EDUCATION FOR KIDS</h4>
+                                </div>
+                                <div class="pbs-department__content">
+                                  <div class="js__department pbs-department__description">
+                                    <p>Makes a positive impact on the lives of children through full spectrum of media & technology to build knowledge, critical thinking, imagination and curiosity.</p>
+                                    <a href="#" data-toggle="modal" data-target="#department">Read More ›</a>
+                                  </div>
+                                  <ul class="pbs-list pbs-list--content">
+                                    <li class="pbs-list__item"><a href="#">PBS Education Information  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS KIDS Digital  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS KIDS 24/7 Assistance  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">CM&E Engagement Resources  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">2017 Programming Priorities  ›</a></li>
+                                  </ul>
+                                </div>
+                                <div class="socicons">
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                              <div class="pbs-department">
+                                <div class="pbs-department__header">
+                                  <h3 class="pbs-department__title">Development Services</h3>
+                                  <h4 class="pbs-department__sub-title">STATION FUNDING TO GROW FINANCES</h4>
+                                </div>
+                                <div class="pbs-department__content">
+                                  <div class="js__department pbs-department__description">
+                                    <p>Provides professional services, innovative fundraising tactics, and resources to enhance individual giving activities and increase financial sustainability.</p>
+                                    <a href="#" data-toggle="modal" data-target="#department">Read More ›</a>
+                                  </div>
+                                  <ul class="pbs-list pbs-list--content">
+                                    <li class="pbs-list__item"><a href="#">On Air Fundraising  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Corporate Support Library  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Development Contacts List  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Newsletters Archive  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Development Services Website  ›</a></li>
+                                  </ul>
+                                </div>
+                                <div class="socicons">
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                              <div class="pbs-department">
+                                <div class="pbs-department__header">
+                                  <h3 class="pbs-department__title">Corporate Comms.</h3>
+                                  <h4 class="pbs-department__sub-title">Communications PBS Mission &amp; Activity</h4>
+                                </div>
+                                <div class="pbs-department__content">
+                                  <div class="js__department pbs-department__description">
+                                    <p>Manages external corporate communications to partners, donars, press and the public in a way that is cohesive, constitant, credible, and best represents the PBS mission.</p>
+                                    <a href="#" data-toggle="modal" data-target="#department">Read More ›</a>
+                                  </div>
+                                  <ul class="pbs-list pbs-list--content">
+                                    <li class="pbs-list__item"><a href="#">Program Priorities  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS Local Connections Map  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Notable Press Releases  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS Pressroom  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">IPG Listings  ›</a></li>
+                                  </ul>
+                                </div>
+                                <div class="socicons">
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                              <div class="pbs-department">
+                                <div class="pbs-department__header">
+                                  <h3 class="pbs-department__title">KIDS & Education</h3>
+                                  <h4 class="pbs-department__sub-title">ENTERTAINMENT & EDUCATION FOR KIDS</h4>
+                                </div>
+                                <div class="pbs-department__content">
+                                  <div class="js__department pbs-department__description">
+                                    <p>Makes a positive impact on the lives of children through full spectrum of media & technology to build knowledge, critical thinking, imagination and curiosity.</p>
+                                    <a href="#" data-toggle="modal" data-target="#department">Read More ›</a>
+                                  </div>
+                                  <ul class="pbs-list pbs-list--content">
+                                    <li class="pbs-list__item"><a href="#">PBS Education Information  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS KIDS Digital  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">PBS KIDS 24/7 Assistance  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">CM&E Engagement Resources  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">2017 Programming Priorities  ›</a></li>
+                                  </ul>
+                                </div>
+                                <div class="socicons">
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                              <div class="pbs-department">
+                                <div class="pbs-department__header">
+                                  <h3 class="pbs-department__title">Development Services</h3>
+                                  <h4 class="pbs-department__sub-title">STATION FUNDING TO GROW FINANCES</h4>
+                                </div>
+                                <div class="pbs-department__content">
+                                  <div class="js__department pbs-department__description">
+                                    <p>Provides professional services, innovative fundraising tactics, and resources to enhance individual giving activities and increase financial sustainability.</p>
+                                    <a href="#" data-toggle="modal" data-target="#department">Read More ›</a>
+                                  </div>
+                                  <ul class="pbs-list pbs-list--content">
+                                    <li class="pbs-list__item"><a href="#">On Air Fundraising  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Corporate Support Library  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Development Contacts List  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Newsletters Archive  ›</a></li>
+                                    <li class="pbs-list__item"><a href="#">Development Services Website  ›</a></li>
+                                  </ul>
+                                </div>
+                                <div class="socicons">
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+                                  <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- end - row -->
+                        </div><!-- end - portlet body -->
+                      </div><!-- end - portlet -->
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
+
+              <div id="nav-events" class="container-wide pbs-section pbs-section--evening">
+                <div class="page-content-inner">
+
+                  <div class="container">
+
+                    <div class="row">
+
+                      <div class="col-md-12">
+                        <h2 class="pbs-section__title">Events</h2>
+                      </div>
+
+                      <div class="col-md-12 pbs-events">
+                        <div class="col-md-4 col-xs-12 pbs-events__event">
+                          <div class="">
+                            <div class="media">
+                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                              <div class="media-body">
+                              <h3 class="media-heading">JULY 1, 2017</h3>
+                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 pbs-events__event">
+                          <div class="">
+                            <div class="media">
+                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                              <div class="media-body">
+                              <h3 class="media-heading">JULY 1, 2017</h3>
+                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 pbs-events__event">
+                          <div class="">
+                            <div class="media">
+                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                              <div class="media-body">
+                              <h3 class="media-heading">JULY 1, 2017</h3>
+                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 pbs-events__event">
+                          <div class="">
+                            <div class="media">
+                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                              <div class="media-body">
+                              <h3 class="media-heading">JULY 1, 2017</h3>
+                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 pbs-events__event">
+                          <div class="">
+                            <div class="media">
+                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                              <div class="media-body">
+                              <h3 class="media-heading">JULY 1, 2017</h3>
+                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-xs-12 pbs-events__event">
+                          <div class="">
+                            <div class="media">
+                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                              <div class="media-body">
+                              <h3 class="media-heading">JULY 1, 2017</h3>
+                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div><!-- /end row -->
+
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <button class="btn pbs-btn pbs-btn--secondary btn-lg" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Show More Events</button>
+                    </div>
+
+                  </div><!-- container -->
+
+                </div><!-- page-content-inner -->
+
+                </div>
+
+              </div><!-- /end pbs-section -->
+
+              <div id="nav-newsletters" class="container pbs-section">
                 <div class="page-content-inner">
 
                   <div class="row">
                     <div class="col-md-12">
+                      <h2 class="pbs-section__title">Newsletters</h2>
+                    </div>
+                    <div class="col-md-12">
 
-                      <div id="nav-resources" class="portlet light">
-                        <div class="portlet-title">
-                          <h2>PBS Station Resources &amp; Information</h2>
-                        </div>
-                        <div class="portlet-body">
-                          
-                          <div class="bg-red-thunderbird bg-font-red-thunderbird pbs-mostPopular">
-                            <nav class="pbs-mostPopular__nav">
-                              <span class="pbs-mostPopular__title">Most Popular: </span>
-                              <a class="pbs-mostPopular__link" href="#">Bento</a>
-                              <a class="pbs-mostPopular__link" href="#">Cove</a>
-                              <a class="pbs-mostPopular__link" href="#">Broadcast Schedule</a>
-                              <a class="pbs-mostPopular__link" href="#">Station Management Center</a>
-                              <a class="pbs-mostPopular__link" href="#">The Source</a>
-                              <a class="pbs-mostPopular__link" href="#">PBS Logos</a>
-                            </nav>
+                      <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                          <ul class="pbs-list">
+                            <li class="pbs-list__item"><a href="#">SPI (Station Products & Innovation)  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">PBS KIDS MarCom  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">PBS Education  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">TechNews  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">PBS Marketing & Communications Weekly Round-up  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">TAC Times  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">Corporate Support Spotlight  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">CTO Newsletter  ›</a></li>
+                          </ul>
+                        </div><!-- end - col -->
+                        <div class="col-md-6 col-xs-12">
+                          <ul class="pbs-list">
+                            <li class="pbs-list__item"><a href="#">PBS Rundown (newsletter in development)  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">PBS LearningMedia Registered User List   ›</a></li>
+                            <li class="pbs-list__item"><a href="#">PBS LearningMedia Week At A Glance  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">PBS LearningMedia Station MarCom Toolkit  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">TechCon (mailing list/marketing)  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">myPBS Product Update  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">myPBS Blog Newsletter  ›</a></li>
+                            <li class="pbs-list__item"><a href="#">myPBS Blog RSS activity stream  ›</a></li>
+                          </ul>
+                        </div><!-- end - col -->
+                      </div><!-- end - row -->
+
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
+
+              <div id="nav-faq" class="container-wide pbs-section pbs-section--mute">
+                <div class="page-content-inner">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+
+                        <h2 class="pbs-section__title">FAQ</h2>
+
+                        <div class="panel-group accordion" id="accordion3">
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_1" aria-expanded="false"> Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
+                              </h4>
+                            </div>
+                            <div id="collapse_3_1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                              <div class="panel-body">
+                                <p> Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.</p>
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                              </div>
+                            </div>
                           </div>
 
-                          <div class="row">
-
-                            <div class="col-md-4 col-xs-12">
-                              <div class="thumbnail pbs-department">
-                                <div class="caption">
-                                  <h3 class="mt-card-name pbs-department__title">Corporate Comms.</h3>
-                                  <p class="mt-card-desc font-grey-mint pbs-department__subTitle">Communications PBS Mission &amp; Activity</p>
-                                  <div class="pbs-department__content">
-                                    <p>Manages external corporate communications to partners, donars, press and the public in a way that is cohesive, constitant, credible, and best represents the PBS mission. <a href="#">More</a></p>
-                                    <ul>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="socicons">
-                                    <a class="socicon-btn socicon-btn-circle socicon-mail tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-twitter tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-facebook tooltips" href="#"></a>
-                                  </div>
-                                </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_2" aria-expanded="false"> Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
+                              </h4>
+                            </div>
+                            <div id="collapse_3_2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                              <div class="panel-body">
+                                <p> Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.</p>
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
                               </div>
                             </div>
-
-                            <div class="col-md-4 col-xs-12">
-                              <div class="thumbnail pbs-department">
-                                <div class="caption">
-                                  <h3 class="mt-card-name pbs-department__title">Corporate Comms.</h3>
-                                  <p class="mt-card-desc font-grey-mint pbs-department__subTitle">Communications PBS Mission &amp; Activity</p>
-                                  <div class="pbs-department__content">
-                                    <p>Manages external corporate communications to partners, donars, press and the public in a way that is cohesive, constitant, credible, and best represents the PBS mission. <a href="#">More</a></p>
-                                    <ul>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="socicons">
-                                    <a class="socicon-btn socicon-btn-circle socicon-mail tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-twitter tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-facebook tooltips" href="#"></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="col-md-4 col-xs-12">
-                              <div class="thumbnail pbs-department">
-                                <div class="caption">
-                                  <h3 class="mt-card-name pbs-department__title">Corporate Comms.</h3>
-                                  <p class="mt-card-desc font-grey-mint pbs-department__subTitle">Communications PBS Mission &amp; Activity</p>
-                                  <div class="pbs-department__content">
-                                    <p>Manages external corporate communications to partners, donars, press and the public in a way that is cohesive, constitant, credible, and best represents the PBS mission. <a href="#">More</a></p>
-                                    <ul>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="socicons">
-                                    <a class="socicon-btn socicon-btn-circle socicon-mail tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-twitter tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-facebook tooltips" href="#"></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="col-md-4 col-xs-12">
-                              <div class="thumbnail pbs-department">
-                                <div class="caption">
-                                  <h3 class="mt-card-name pbs-department__title">Corporate Comms.</h3>
-                                  <p class="mt-card-desc font-grey-mint pbs-department__subTitle">Communications PBS Mission &amp; Activity</p>
-                                  <div class="pbs-department__content">
-                                    <p>Manages external corporate communications to partners, donars, press and the public in a way that is cohesive, constitant, credible, and best represents the PBS mission. <a href="#">More</a></p>
-                                    <ul>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="socicons">
-                                    <a class="socicon-btn socicon-btn-circle socicon-mail tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-twitter tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-facebook tooltips" href="#"></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="col-md-4 col-xs-12">
-                              <div class="thumbnail pbs-department">
-                                <div class="caption">
-                                  <h3 class="mt-card-name pbs-department__title">Corporate Comms.</h3>
-                                  <p class="mt-card-desc font-grey-mint pbs-department__subTitle">Communications PBS Mission &amp; Activity</p>
-                                  <div class="pbs-department__content">
-                                    <p>Manages external corporate communications to partners, donars, press and the public in a way that is cohesive, constitant, credible, and best represents the PBS mission. <a href="#">More</a></p>
-                                    <ul>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="socicons">
-                                    <a class="socicon-btn socicon-btn-circle socicon-mail tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-twitter tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-facebook tooltips" href="#"></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="col-md-4 col-xs-12">
-                              <div class="thumbnail pbs-department">
-                                <div class="caption">
-                                  <h3 class="mt-card-name pbs-department__title">Corporate Comms.</h3>
-                                  <p class="mt-card-desc font-grey-mint pbs-department__subTitle">Communications PBS Mission &amp; Activity</p>
-                                  <div class="pbs-department__content">
-                                    <p>Manages external corporate communications to partners, donars, press and the public in a way that is cohesive, constitant, credible, and best represents the PBS mission. <a href="#">More</a></p>
-                                    <ul>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                      <li><a href="#">Some Link Here</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="socicons">
-                                    <a class="socicon-btn socicon-btn-circle socicon-mail tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-twitter tooltips" href="#"></a>
-                                    <a class="socicon-btn socicon-btn-circle socicon-facebook tooltips" href="#"></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div><!-- end - row -->
-
-                        </div><!-- end - portlet body -->
-                      </div><!-- end - portlet -->
-
-                      <div id="nav-events" class="portlet light">
-                        <div class="portlet-title">
-                          <h2>Events</h2>
-                        </div>
-                        <div class="portlet-body" style=""></div>
-                      </div><!-- end - portlet -->
-
-                      <div id="nav-newsletter" class="portlet light">
-                        <div class="portlet-title">
-                          <h2>Newsletters</h2>
-                        </div>
-                        <div class="portlet-body">
-                          
-                          <div class="row">
-                            <div class="col-md-6 col-xs-12">
-
-                              <div class="mt-checkbox-list">
-                                <label class="mt-checkbox mt-checkbox-outline">
-                                  <input type="checkbox"> SPI (Station Products &amp; Innovation)
-                                  <span></span>
-                                </label>
-                                <label class="mt-checkbox mt-checkbox-outline">
-                                  <input type="checkbox"> PBS Kids MorCom
-                                  <span></span>
-                                </label>
-                                <label class="mt-checkbox mt-checkbox-outline">
-                                  <input type="checkbox"> PBS ...
-                                  <span></span>
-                                </label>
-                                <label class="mt-checkbox mt-checkbox-outline">
-                                  <input type="checkbox"> PBS ...
-                                  <span></span>
-                                </label>
-                              </div>
-
-                            </div><!-- end - col -->
-                            <div class="col-md-6 col-xs-12">
-
-                              <div class="mt-checkbox-list">
-                                <label class="mt-checkbox mt-checkbox-outline">
-                                  <input type="checkbox"> PBS Rundown (newsletter in development)
-                                  <span></span>
-                                </label>
-                                <label class="mt-checkbox mt-checkbox-outline">
-                                  <input type="checkbox"> PBS Learning Media Registered User List
-                                  <span></span>
-                                </label>
-                                <label class="mt-checkbox mt-checkbox-outline">
-                                  <input type="checkbox"> PBS ...
-                                  <span></span>
-                                </label>
-                                <label class="mt-checkbox mt-checkbox-outline">
-                                  <input type="checkbox"> PBS ...
-                                  <span></span>
-                                </label>
-                              </div>
-
-                            </div><!-- end - col -->
-                          </div><!-- end - row -->
-
-                          <div style="text-align:center;border-top:solid 1px #ccc;padding-top:20px">
-
-                            <button class="btn btn-primary mt-sweetalert" data-title="Success" data-message="Your newsletter settings have been saved" data-allow-outside-click="true" data-confirm-button-class="btn-primary">Save Preferences</button>
-
                           </div>
 
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_3" aria-expanded="false"> Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
+                              </h4>
+                            </div>
+                            <div id="collapse_3_3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                              <div class="panel-body">
+                                <p> Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.</p>
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                              </div>
+                            </div>
+                          </div>
 
-                        </div><!-- end - portlet body -->
-                      </div><!-- end - portlet -->
+                        </div><!-- end panel-group  -->
 
-                      <div id="nav-faq" class="portlet light">
-                        <div class="portlet-title">
-                          <h2>FAQ</h2>
-                        </div>
-                        <div class="portlet-body" style=""></div>
-                      </div><!-- end - portlet -->
+                      </div>
 
+                      <div class="col-md-12 text-center">
+                        <button class="btn pbs-btn pbs-btn--primary btn-lg" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Show More FAQ</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
+
+              <div id="nav-help" class="container pbs-section">
+                <div class="page-content-inner">
+                  <div class="row">
+                    <div class="col-md-12">
+                    <h2 class="pbs-section__title">Help</h2>
                       <div id="nav-help" class="portlet light">
-                        <div class="portlet-title">
-                          <h2>Help</h2>
-                        </div>
                         <div class="portlet-body" style=""></div>
                       </div><!-- end - portlet -->
 
                     </div>
                   </div>
+                </div>
+              </div><!-- /end pbs-section -->
 
-                </div><!-- end - page-content-inner -->
-              </div><!-- end - container -->
             </div><!-- end - page-content -->
             
           </div><!-- end - page-content-wrapper -->
@@ -415,8 +665,22 @@
 
 
 
-
-
+<!-- Modal -->
+<div class="modal fade" id="department" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+    </div>
+    <div class="modal-body">
+      ...
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
 
 
 
@@ -478,6 +742,8 @@
     <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
     <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
     <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
+    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script>
+    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL PLUGINS -->
 
     <!-- BEGIN THEME GLOBAL SCRIPTS -->
@@ -502,7 +768,9 @@
 
     <script>
       $(document).ready(function() {
-        
+        $('#js__departmentVisible').on("click", function(){
+          $('.js__department').toggle();
+        });
       });
     </script>
 
