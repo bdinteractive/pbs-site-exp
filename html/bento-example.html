@@ -1,0 +1,84 @@
+{% load cms_tags sekizai_tags filertags thumbnail page_tags %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Title</title>
+
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <!-- Global CSS -->
+    
+    {% render_block "css" %}
+    <link href="{{ '/site-connector/styles/pbs-dwe-bootstrap.css'|filerfile }}" rel="stylesheet">
+
+    <!-- Webfonts -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    
+</head>
+
+<body>
+    {% cms_toolbar %}
+
+    <div class="pbs-site-contaner-background"></div>
+    {% placeholder top-background inherit%}
+
+
+    <header class="container-fluid pbs-siteContainer padding-top-bottom-large">
+
+        <div class="row">
+            
+            <div class="col-md-12">
+                {% placeholder top-logo inherit%}
+            </div>
+            
+            <div class="col-md-6">
+                
+              {% placeholder summary inherit%}
+                
+             <!-- <div class="header-pbs-button-group">
+                    <a href="#" class="btn-pbs-outline-ani">How it Works</a>
+                    <a href="#" class="btn-pbs-solid-ani">Why a Site Connector</a>
+                    <a href="#">Ask for Support</a>
+                </div>-->
+
+            </div>
+            
+            <div class="col-md-6">
+                {% placeholder site-image inherit%}
+            </div>
+
+        </div><!-- /end row -->
+
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="pbs-content row">
+
+            <div class="col-md-12">    
+
+                {% placeholder site-title inherit%}
+
+                {% placeholder content-categories inherit%}
+                
+                {% placeholder page-content inherit%}
+                
+
+            </div><!-- /col-md-12 -->
+        
+        </div><!-- /row -->
+
+    </div><!-- /container-fluid -->
+
+
+    <!-- Load JavaScript at the Bottom -->
+    {% render_block "js" %}
+    <script src="{{ '/site-connector/scripts/main.min.js'|filerfile }}"></script>
+
+</body>
+</html>​

@@ -321,21 +321,21 @@ h4.media-heading {
 }
 .pbs-mostPopular__nav {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
 }
 .pbs-mostPopular__title {
   text-transform: uppercase;
-  flex-grow: 1;
   font-size: 20px;
   font-weight: 700;
+  margin-right: 10px;
 }
 .pbs-mostPopular__link {
   color: #ff7300;
   font-size: 16px;
-  flex-grow: 1;
   font-family: 'Arvo', serif;
   font-weight: 700;
   line-height: 29px;
+  margin-left: 20px;
 }
 .pbs-mostPopular__link:hover:after {
   text-decoration: none;

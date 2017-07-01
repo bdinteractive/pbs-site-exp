@@ -1,8 +1,18 @@
-/*!
- * PBS Styles including Bootstrap 3.3.7
- */
+@import "../theme/metronic_v4.7.5/theme/assets/global/plugins/font-awesome/css/font-awesome";
+@import "../theme/metronic_v4.7.5/theme/assets/global/plugins/simple-line-icons/simple-line-icons";
+@import "../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap/css/bootstrap";
+@import "../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-switch/css/bootstrap-switch";
+@import "../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-sweetalert/sweetalert";
+@import "../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch";
+@import "../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/css/bootstrap-modal";
 
-@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// BEGIN THEME GLOBAL STYLES 
+@import "../theme/metronic_v4.7.5/theme/assets/global/css/components-rounded";
+@import "../theme/metronic_v4.7.5/theme/assets/global/css/plugins";
 
-// PBS Styles
-// @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+// BEGIN THEME LAYOUT STYLES
+@import "../theme/metronic_v4.7.5/theme/assets/layouts/layout3/css/layout";
+@import "../theme/metronic_v4.7.5/theme/assets/layouts/layout3/css/custom";
+
+// PBS Modified
+@import "../css/pbs-custom";
