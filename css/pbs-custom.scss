@@ -1,19 +1,4 @@
 
-@font-face {
-    font-family: 'socicon';
-    src: url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.eot');
-    src: url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.eot?#iefix') format('embedded-opentype'),
-         url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.woff') format('woff'),
-         url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.woff2') format('woff2'),
-         url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.ttf') format('truetype'),
-         url('../theme/metronic_v4.7.5/theme/assets/global/plugins/socicon/font/socicon.svg#sociconregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    text-transform: initial;
-}
-
-
-
 
 
 /* Theme Custom Overrides */
@@ -108,6 +93,17 @@ h4.media-heading {
 
 
 
+.pbs-faq {
+  height: 224px;
+  overflow: hidden;
+  width: 100%;
+}
+.pbs-faq--displayAll {
+  height: inherit;
+}
+
+
+
 
 /* Page Head Component */
 
@@ -167,6 +163,55 @@ h4.media-heading {
   font-size: 16px;
 }
 
+
+
+/* Help Tiles */
+
+.pbs-help-tile {
+  height: 440px;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+}
+.pbs-help-tile__icon {
+  background-color: #ffa009;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: white;
+  margin: 0 auto 50px auto;
+  display: flex;
+  align-items: center;
+}
+.pbs-help-tile__icon i {
+  font-size: 64px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.pbs-help-tile__title {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.pbs-help-tile__sub-text {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.pbs-help-tile__link {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.pbs-help-tile__link:hover {
+  color: white;
+}
+
+
+
+
+
 /* Section Component */
 
 .pbs-section {
@@ -182,11 +227,18 @@ h4.media-heading {
   background-image: linear-gradient(135deg, rgba(246, 139, 33, 0.7) 0%, rgba(243, 118, 36, 0.81) 42%, rgba(242, 103, 38, 0.89) 60%, rgba(240, 93, 40, 0.93) 79%, rgba(240, 90, 40, 0.95) 100%);
 }
 
+.pbs-section--mellow {
+  background-image: linear-gradient(-25deg, #652d90 0%, #603293 21%, #523f9b 46%, #3b56a8 73%, #1b75bb 100%, #1b75bb 100%);
+}
+
 .pbs-section__title {
   font-size: 40px;
   color: #52044a;
   font-weight: 700;
   margin-bottom: 50px;
+}
+.pbs-section__title--white {
+  color: white;
 }
 .pbs-section__buttonGroup {
   padding: 20px 0 40px 0;
@@ -279,6 +331,12 @@ h4.media-heading {
 
 .pbs-events {
   margin-bottom: 65px;
+  height: 186px;
+  overflow: hidden;
+  width: 100%;
+}
+.pbs-events--displayAll {
+  height: inherit;
 }
 .pbs-events__event {
   background-color: white;
@@ -289,10 +347,17 @@ h4.media-heading {
   border-bottom-width: 1px;
   padding: 20px;
 }
+.pbs-events__event a {
+  color: initial;
+}
+.pbs-events__event a:hover {
+  text-decoration: none;
+}
 
 /* List Component */
 
-.pbs-list {
+.pbs-list,
+.pbs-newsletters ul {
   margin-left: 18px;
   padding-left: 0;
   line-height: 42px;
@@ -302,12 +367,20 @@ h4.media-heading {
   line-height: 32px;
 }
 .pbs-list__item ,
-.pbs-list__item a {
+.pbs-list__item a,
+.pbs-newsletters li,
+.pbs-newsletters li a {
   font-size: 16px;
   color: #719d0e;
   font-family: 'Arvo', serif;
   font-weight: 700;
 }
+
+.pbs-newsletters table {
+  width: 100%;
+  border: white;
+}
+
 
 
 

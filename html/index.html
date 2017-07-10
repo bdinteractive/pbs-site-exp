@@ -9,6 +9,8 @@
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="../dist/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../dist/fonts/socicon/socicon.css" rel="stylesheet" type="text/css" />
 <!--     <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
     <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -111,7 +113,7 @@
                     </div>
 
                     <div class="pbs-page-head__video">
-                      <button class="btn pbs-page-head__btn pbs-page-head__btn--play btn-lg" type="button"><i class="glyphicon glyphicon-play" aria-hidden="true"></i></button>
+                      <button class="btn pbs-page-head__btn pbs-page-head__btn--play btn-lg" type="button"><i class="fa fa-play" aria-hidden="true"></i></button>
                       <h5 class="pbs-page-head__playBtnText">Watch MyPBS 101</h5>
                     </div>
 
@@ -425,83 +427,87 @@
                         <h2 class="pbs-section__title">Events</h2>
                       </div>
 
-                      <div class="col-md-12 pbs-events">
-                        <div class="col-md-4 col-xs-12 pbs-events__event">
-                          <div class="">
-                            <div class="media">
-                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
-                              <div class="media-body">
-                              <h3 class="media-heading">JULY 1, 2017</h3>
-                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
-                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="">
 
-                        <div class="col-md-4 col-xs-12 pbs-events__event">
-                          <div class="">
-                            <div class="media">
-                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
-                              <div class="media-body">
-                              <h3 class="media-heading">JULY 1, 2017</h3>
-                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
-                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                        <div class="col-md-12 pbs-events">
+                          <div class="col-md-4 col-xs-12 pbs-events__event">
+                            <div class="">
+                              <div class="media">
+                                <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                                <div class="media-body">
+                                <h3 class="media-heading">JULY 1, 2017</h3>
+                                <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                                <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="col-md-4 col-xs-12 pbs-events__event">
-                          <div class="">
-                            <div class="media">
-                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
-                              <div class="media-body">
-                              <h3 class="media-heading">JULY 1, 2017</h3>
-                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
-                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                          <div class="col-md-4 col-xs-12 pbs-events__event">
+                            <div class="">
+                              <div class="media">
+                                <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                                <div class="media-body">
+                                <h3 class="media-heading">JULY 1, 2017</h3>
+                                <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                                <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="col-md-4 col-xs-12 pbs-events__event">
-                          <div class="">
-                            <div class="media">
-                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
-                              <div class="media-body">
-                              <h3 class="media-heading">JULY 1, 2017</h3>
-                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
-                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                          <div class="col-md-4 col-xs-12 pbs-events__event">
+                            <div class="">
+                              <div class="media">
+                                <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                                <div class="media-body">
+                                <h3 class="media-heading">JULY 1, 2017</h3>
+                                <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                                <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="col-md-4 col-xs-12 pbs-events__event">
-                          <div class="">
-                            <div class="media">
-                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
-                              <div class="media-body">
-                              <h3 class="media-heading">JULY 1, 2017</h3>
-                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
-                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                          <div class="col-md-4 col-xs-12 pbs-events__event">
+                            <div class="">
+                              <div class="media">
+                                <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                                <div class="media-body">
+                                <h3 class="media-heading">JULY 1, 2017</h3>
+                                <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                                <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="col-md-4 col-xs-12 pbs-events__event">
-                          <div class="">
-                            <div class="media">
-                              <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
-                              <div class="media-body">
-                              <h3 class="media-heading">JULY 1, 2017</h3>
-                              <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
-                              <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                          <div class="col-md-4 col-xs-12 pbs-events__event">
+                            <div class="">
+                              <div class="media">
+                                <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                                <div class="media-body">
+                                <h3 class="media-heading">JULY 1, 2017</h3>
+                                <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                                <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                                </div>
                               </div>
                             </div>
                           </div>
+
+                          <div class="col-md-4 col-xs-12 pbs-events__event">
+                            <div class="">
+                              <div class="media">
+                                <img class="media-object pull-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" alt="64x64" data-src="../assets/global/plugins/holder.js/64x64" style="width: 85px; height: 85px;">
+                                <div class="media-body">
+                                <h3 class="media-heading">JULY 1, 2017</h3>
+                                <h4 class="media-heading">EVENT TITLE GOES HERE</h4>
+                                <p>Lorem ipsum maxime placeat facere possim Nam libero tempore, cum soluta nobis est eligendi.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
 
                       </div>
@@ -510,7 +516,7 @@
 
                     <div class="row">
                       <div class="col-md-12 text-center">
-                        <button class="btn pbs-btn pbs-btn--secondary btn-lg" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Show More Events</button>
+                        <button id="js-events-btn" class="btn pbs-btn pbs-btn--secondary btn-lg" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Show More Events</button>
                     </div>
 
                   </div><!-- container -->
@@ -528,34 +534,41 @@
                     <div class="col-md-12">
                       <h2 class="pbs-section__title">Newsletters</h2>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 pbs-newsletters">
 
-                      <div class="row">
-                        <div class="col-md-6 col-xs-12">
-                          <ul class="pbs-list">
-                            <li class="pbs-list__item"><a href="#">SPI (Station Products & Innovation)  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">PBS KIDS MarCom  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">PBS Education  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">TechNews  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">PBS Marketing & Communications Weekly Round-up  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">TAC Times  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">Corporate Support Spotlight  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">CTO Newsletter  ›</a></li>
-                          </ul>
-                        </div><!-- end - col -->
-                        <div class="col-md-6 col-xs-12">
-                          <ul class="pbs-list">
-                            <li class="pbs-list__item"><a href="#">PBS Rundown (newsletter in development)  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">PBS LearningMedia Registered User List   ›</a></li>
-                            <li class="pbs-list__item"><a href="#">PBS LearningMedia Week At A Glance  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">PBS LearningMedia Station MarCom Toolkit  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">TechCon (mailing list/marketing)  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">myPBS Product Update  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">myPBS Blog Newsletter  ›</a></li>
-                            <li class="pbs-list__item"><a href="#">myPBS Blog RSS activity stream  ›</a></li>
-                          </ul>
-                        </div><!-- end - col -->
-                      </div><!-- end - row -->
+
+
+                        <table border="1" cellpadding="1" cellspacing="1" style="width:100%">
+                          <tbody>
+                            <tr>
+                              <td>
+                              <ul>
+                                <li><a href="#">SPI (Station Products &amp; Innovation) &rsaquo;</a></li>
+                                <li><a href="#">PBS KIDS MarCom &rsaquo;</a></li>
+                                <li><a href="#">PBS Education &rsaquo;</a></li>
+                                <li><a href="#">TechNews &rsaquo;</a></li>
+                                <li><a href="#">PBS Marketing &amp; Communications Weekly Round-up &rsaquo;</a></li>
+                                <li><a href="#">TAC Times &rsaquo;</a></li>
+                                <li><a href="#">Corporate Support Spotlight &rsaquo;</a></li>
+                                <li><a href="#">CTO Newsletter &rsaquo;</a></li>
+                              </ul>
+                              </td>
+                              <td>
+                              <ul>
+                                <li><a href="#">PBS Rundown (newsletter in development) &rsaquo;</a></li>
+                                <li><a href="#">PBS LearningMedia Registered User List &rsaquo;</a></li>
+                                <li><a href="#">PBS LearningMedia Week At A Glance &rsaquo;</a></li>
+                                <li><a href="#">PBS LearningMedia Station MarCom Toolkit &rsaquo;</a></li>
+                                <li><a href="#">TechCon (mailing list/marketing) &rsaquo;</a></li>
+                                <li><a href="#">myPBS Product Update &rsaquo;</a></li>
+                                <li><a href="#">myPBS Blog Newsletter &rsaquo;</a></li>
+                                <li><a href="#">myPBS Blog RSS activity stream &rsaquo;</a></li>
+                              </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
 
                     </div>
                   </div>
@@ -570,7 +583,7 @@
 
                         <h2 class="pbs-section__title">FAQ</h2>
 
-                        <div class="panel-group accordion" id="accordion3">
+                        <div class="panel-group accordion pbs-faq" id="pbs-faq">
 
                           <div class="panel panel-default">
                             <div class="panel-heading">
@@ -619,7 +632,7 @@
                       </div>
 
                       <div class="col-md-12 text-center">
-                        <button class="btn pbs-btn pbs-btn--primary btn-lg" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Show More FAQ</button>
+                        <button id="js-faq-btn" class="btn pbs-btn pbs-btn--primary btn-lg" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Show More FAQ</button>
                       </div>
 
                     </div>
@@ -627,15 +640,44 @@
                 </div>
               </div><!-- /end pbs-section -->
 
-              <div id="nav-help" class="container pbs-section">
+              <div id="nav-help" class="container-wide pbs-section pbs-section--mellow">
                 <div class="page-content-inner">
-                  <div class="row">
-                    <div class="col-md-12">
-                    <h2 class="pbs-section__title">Help</h2>
-                      <div id="nav-help" class="portlet light">
-                        <div class="portlet-body" style=""></div>
-                      </div><!-- end - portlet -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="pbs-section__title pbs-section__title--white">Help</h2>
 
+                        <div class="row">
+
+                          <div class="col-md-4">
+                            <div class="pbs-help-tile">
+                              <div class="pbs-help-tile__icon">
+                                <i class="fa fa-phone"></i>
+                              </div>
+                              <h3 class="pbs-help-tile__title">Test Title</h3>
+                              <div class="pbs-help-tile__sub-text">Some text in this place.</div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="pbs-help-tile">
+                              <div class="pbs-help-tile__icon"><i class="fa fa-envelope-o"></i></div>
+                              <h3 class="pbs-help-tile__title">Test Title</h3>
+                              <div class="pbs-help-tile__sub-text"><a class="pbs-help-tile__link" href="#">Some text in this place.</a></div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="pbs-help-tile">
+                              <div class="pbs-help-tile__icon"><i class="fa fa-user"></i></div>
+                              <h3 class="pbs-help-tile__title">Test Title</h3>
+                              <div class="pbs-help-tile__sub-text">Some text in this place.</div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -775,6 +817,18 @@
       $(document).ready(function() {
         $('#js__departmentVisible').on("click", function(){
           $('.js__department').toggle();
+        });
+        $('#js-events-btn').on("click", function(){
+          $('.pbs-events').toggleClass('pbs-events--displayAll');
+          var text = $(this).text();
+          if(text = 'Show More Events'){
+            $(this).text('Show Less Events');
+          } else if(text = 'Show Less Events'){
+            $(this).text('Show More Events');
+          }
+        });
+        $('#js-faq-btn').on("click", function(){
+          $('.pbs-faq').toggleClass('pbs-faq--displayAll');
         });
       });
     </script>
