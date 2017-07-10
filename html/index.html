@@ -516,7 +516,10 @@
 
                     <div class="row">
                       <div class="col-md-12 text-center">
-                        <button id="js-events-btn" class="btn pbs-btn pbs-btn--secondary btn-lg" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Show More Events</button>
+                        <button id="js-events-btn" class="btn pbs-btn pbs-btn--secondary btn-lg" type="button">
+                          <i class="fa fa-plus js-events-icon" aria-hidden="true"></i> 
+                          <span class="js-events-text">Show More Events</span>
+                        </button>
                     </div>
 
                   </div><!-- container -->
@@ -632,7 +635,10 @@
                       </div>
 
                       <div class="col-md-12 text-center">
-                        <button id="js-faq-btn" class="btn pbs-btn pbs-btn--primary btn-lg" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Show More FAQ</button>
+                        <button id="js-faq-btn" class="btn pbs-btn pbs-btn--primary btn-lg" type="button">
+                          <i class="fa fa-plus js-faq-icon" aria-hidden="true"></i> 
+                          <span class="js-faq-text">Show More FAQ</span>
+                        </button>
                       </div>
 
                     </div>
@@ -820,11 +826,28 @@
         });
         $('#js-events-btn').on("click", function(){
           $('.pbs-events').toggleClass('pbs-events--displayAll');
-          var text = $(this).text();
-          if(text = 'Show More Events'){
-            $(this).text('Show Less Events');
-          } else if(text = 'Show Less Events'){
-            $(this).text('Show More Events');
+          var eventText = $('.js-events-text');
+          var eventIcon = $('.js-events-icon');
+          var text = eventText.text();
+          if(text == 'Show More Events'){
+            eventText.text('Show Less Events');
+            eventIcon.toggleClass('fa-minus');
+          } else if (text == 'Show Less Events'){
+            eventText.text('Show More Events');
+            eventIcon.toggleClass('fa-minus');
+          }
+        });
+        $('#js-faq-btn').on("click", function(){
+          $('.pbs-faq').toggleClass('.pbs-faq--displayAll');
+          var eventText = $('.js-faq-text');
+          var eventIcon = $('.js-faq-icon');
+          var text = eventText.text();
+          if(text == 'Show More FAQ'){
+            eventText.text('Show Less FAQ');
+            eventIcon.toggleClass('fa-minus');
+          } else if (text == 'Show Less FAQ'){
+            eventText.text('Show More FAQ');
+            eventIcon.toggleClass('fa-minus');
           }
         });
         $('#js-faq-btn').on("click", function(){
