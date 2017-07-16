@@ -3,6 +3,17 @@
 
 /* Theme Custom Overrides */
 
+.accordion .panel .panel-title .accordion-toggle.accordion-toggle-styled {
+  background: url(img/accordion-plusminus.png) no-repeat;
+  background-position: right -20px;
+}
+.accordion .panel .panel-title .accordion-toggle.accordion-toggle-styled.collapsed {
+  background-position: right 12px;
+}
+
+
+
+
 .socicons {
   padding: 0 20px 15px 20px;
 }
@@ -12,6 +23,18 @@
   margin-bottom: 5px;
   display: inline-block;
   padding-top: 4px;
+}
+
+.modal-content {
+  border: 0;
+}
+.close {
+  text-indent: 0px; 
+  background-image: none !important; 
+  color: white;
+  font-size: 42px;
+  width: 25px;
+  height: 25px;
 }
 
 
@@ -102,7 +125,23 @@ h4.media-heading {
   height: inherit;
 }
 
+.pbs-logo {
+  height: 105px;
+  width: 170px;
+  margin-top: 5px;
+  background-image: url(img/LG-Fox-Multicolor-Baselogo.png);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
+.page-header .page-header-menu .hor-menu .navbar-nav>li>a {
+  height: 92px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: white;
+    border-bottom: solid #126fb5 3px;
+}
 
 
 /* Page Head Component */
@@ -146,16 +185,17 @@ h4.media-heading {
 .pbs-page-head__btn--play {
   border: solid 2px white;
   border-radius: 50%;
-  padding: 0 0px 3px 2px;
+  padding: 2px 0 3px 6px;
   width: 40px;
   height: 40px;
   display: flex;
   margin: 0 auto;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: center;
 }
 .pbs-page-head__btn--play i {
   color: white;
+  margin: 9px 0 0 0;
 }
 .pbs-page-head__playBtnText {
   text-align: center;
@@ -469,6 +509,220 @@ h4.media-heading {
   font-size: 16px;
   min-height: 115px;
 }
+
+
+
+.pbs-department-modal-header {
+  background-color: #52044a;
+  height: 140px;
+}
+.pbs-department-modal-header__title {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+.pbs-department-modal-header__subTitle {
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+.pbs-people-header {
+  background-color: #52044a;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+}
+.pbs-people-header--isVisible {
+  display: flex;
+}
+.pbs-people-header h3 {
+  font-size: 16px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding: 30px 0;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 700;
+}
+
+
+
+.pbs-people-tile {
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+.pbs-people-tile--isList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+.pbs-people-tile--border {
+  border: solid 1px #e0e0e0;
+}
+.pbs-people-tile__image {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 25px auto;
+  border-radius: 50%;
+  display: block;
+}
+.pbs-people-tile--isList .pbs-people-tile__image {
+  display: none;
+}
+.pbs-people-tile__primary-text {
+  color: #52044a;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pbs-people-tile__sub-text {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ff7300;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.pbs-people-tile__info {
+  font-size: 14px;
+  color: #222222;
+  padding: 10px 10px 10px 20px;
+}
+.pbs-people-tile__info--border {
+  border-top: solid 1px #e0e0e0;
+}
+.pbs-people-tile__info i {
+  color: #719d0d;
+  margin-right: 10px;
+}
+.pbs-people-tile__link {
+  /*font-size: 14px;
+  color: #222222;
+  padding: 10px 10px 10px 20px;
+  border-top: solid 1px #e0e0e0;*/
+}
+.pbs-people-tile__info-title {
+  color: #52044a;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+.pbs-people-tile--isList .pbs-people-tile__primary-text,
+.pbs-people-tile--isList .pbs-people-tile__sub-text,
+.pbs-people-tile--isList .pbs-people-tile__info {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border: 0;
+  padding: 30px 0;
+}
+.pbs-people-tile--isList .pbs-people-tile__sub-text,
+.pbs-people-tile--isList .pbs-people-tile__info {
+  color: #222;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.pbs-people-tile--isList .pbs-people-tile__info i {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+.pbs-search-form {
+
+}
+.pbs-search-form__label {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-top: 70px;
+}
+.pbs-search-form__input {
+  border-radius: 0;
+  border: none;
+}
+.pbs-search-form__button {
+  margin-top: 108px;
+}
+
+
+.pbs-switch {
+  height: 52px;
+  border: solid 1px #ff7300;
+  padding: 1px;
+  border-radius: 100px;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  max-width: 300px;
+  margin: 20px auto 40px auto;
+}
+.pbs-switch--isSwitched {
+
+}
+.pbs-switch__switcher {
+  background-color: #ff7300;
+  border-radius: 100px;
+  width: 50%;
+  display: inline-block;
+  height: 48px;
+  position: absolute;
+  z-index: 0;
+  left: 1px;
+}
+.pbs-switch--isSwitched .pbs-switch__switcher {
+  right: 1px;
+  left: initial;
+}
+.pbs-switch__button {
+  width: 50%;
+  height: 48px;
+  color: #ff7300;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 48px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+.pbs-switch__button--knockout {
+  color: white;
+}
+.pbs-switch--isSwitched .pbs-switch__button {
+  color: white;
+}
+.pbs-switch--isSwitched .pbs-switch__button--knockout {
+  color: #ff7300;
+}
+
+
+
+
 
 
 
