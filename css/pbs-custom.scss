@@ -560,6 +560,7 @@ h4.media-heading {
 .pbs-people-tile {
   margin-bottom: 45px;
   cursor: pointer;
+  background-color: white;
 }
 .pbs-people-tile--isList {
   display: flex;
@@ -580,6 +581,28 @@ h4.media-heading {
 .pbs-people-tile--isList .pbs-people-tile__image {
   display: none;
 }
+.pbs-people-tile__header {
+  height: 50px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: black;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 700;
+}
+.pbs-people-tile__header--green {
+  background-color: #729d0f;
+}
+.pbs-people-tile__header--red {
+  background-color: #ee4037;
+}
+.pbs-people-tile__header--purple {
+  background-color: #51044a;
+}
+.pbs-people-tile__header--yellow {
+  background-color: #ffa008;
+}
 .pbs-people-tile__primary-text {
   color: #52044a;
   font-size: 20px;
@@ -595,6 +618,15 @@ h4.media-heading {
   color: #ff7300;
   margin-bottom: 25px;
   text-align: center;
+}
+.pbs-people-tile__text {
+  font-size: 14px;
+  color: #222;
+  text-align: center;
+  padding: 0 20px;
+  height: 60px;
+  overflow: hidden;
+  margin: 0 0 20px 0;
 }
 .pbs-people-tile__info {
   font-size: 14px;
@@ -721,6 +753,45 @@ h4.media-heading {
 }
 
 
+
+
+
+.pbs-percent-tile {
+  border: 1px solid #e0e0e0;
+  padding: 40px 40px 20px;
+}
+.pbs-percent-tile__primary-text {
+  color: #729d0e;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.pbs-percent-tile__sub-text {
+  color: #222;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.pbs-percent-tile__percent-bar-bg {
+  background-color: #dde1e0;
+  height: 10px;
+  margin-bottom: 10px;
+}
+.pbs-percent-tile__percent-bar-fg {
+  height: 10px;
+  width: 0;
+  background-color: #ef4138;
+}
+.pbs-percent-tile__small-text {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
 
 
 
