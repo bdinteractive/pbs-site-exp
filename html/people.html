@@ -11,38 +11,6 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link href="../dist/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="../dist/fonts/socicon/socicon.css" rel="stylesheet" type="text/css" />
-<!--     <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" /> -->
-    <!-- END GLOBAL MANDATORY STYLES -->
-
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <!-- <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" /> -->
-    <!-- <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" /> -->
-    <!-- <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" /> -->
-    <!-- <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" /> -->
-
-<!--     <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css" /> -->
-    <!-- END PAGE LEVEL PLUGINS -->
-
-    <!-- BEGIN THEME GLOBAL STYLES -->
-<!--     <link href="../theme/metronic_v4.7.5/theme/assets/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" /> -->
-    <!-- END THEME GLOBAL STYLES -->
-
-    <!-- BEGIN THEME LAYOUT STYLES -->
-<!--     <link href="../theme/metronic_v4.7.5/theme/assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
-    <link href="../theme/metronic_v4.7.5/theme/assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" /> -->
-    <!-- END THEME LAYOUT STYLES -->
-
-    <!-- PBS Modified -->
-    <!-- <link href="../css/pbs-custom.css" rel="stylesheet" type="text/css" /> -->
-    <!-- END PBS Modified -->
-
     <link href="../dist/pbs-site-experience.css" rel="stylesheet" type="text/css" />
 
   </head>
@@ -58,33 +26,7 @@
             <div class="page-header-menu">
               <div class="container">
 
-                <div class="pbs-logo"></div>
-
-                <div class="hor-menu pull-right">
-                  <ul class="nav navbar-nav">
-                    <li aria-haspopup="true" class="">
-                      <a href="/#nav-resources">Resources</a>
-                    </li>
-                    <li aria-haspopup="true" class="">
-                      <a href="/#nav-events">Events</a>
-                    </li>
-                    <li aria-haspopup="true" class="">
-                      <a href="/#nav-newsletters">Newsletters</a>
-                    </li>
-                    <li aria-haspopup="true" class="">
-                      <a href="/#nav-faq">FAQ</a>
-                    </li>
-                    <li aria-haspopup="true" class="">
-                      <a href="/#nav-help">Help</a>
-                    </li>
-                    <li aria-haspopup="true" class="">
-                      <a href="/people">
-                        <i class="fa fa-search"></i>
-                        Search for People
-                      </a>
-                    </li>
-                  </ul>
-                </div><!-- /end - hor-menu -->
+                <a href="/" class="pbs-logo"></a>
                 
               </div>
             </div>
@@ -160,38 +102,115 @@
                     <div class="col-md-12">
                       <div class="pbs-switch">
                         <span class="pbs-switch__switcher"></span>
-                        <span class="pbs-switch__button pbs-switch__button--knockout">List View</span>
-                        <span class="pbs-switch__button">Grid View</span>
+                        <span class="pbs-switch__button pbs-switch__button--knockout">Grid View</span>
+                        <span class="pbs-switch__button">List View</span>
                       </div>
                     </div>
 
                   </div>
 
-                  <div class="row js-pbs-people">
-
+                  <div class="row pbs-people-table pbs-people-table--isVisible js-pbs-people-table">
                     <div class="col-md-12">
-                      <div class="pbs-people-header">
-                        <h3>Name</h3>
-                        <h3>PBS Location</h3>
-                        <h3>Title</h3>
-                        <h3>Email</h3>
-                        <h3>Phone</h3>
-                        <h3>Timezone</h3>
-                      </div>
+
+                      <table id="people-table" class="pbs-table" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>PBS Location</th>
+                            <th>Title</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="">
+                              <span class="pbs-table__u-txt-highlight">Larry Warren</span>
+                            </td>
+                            <td class="">
+                              KNME, New Mexico
+                            </td>
+                            <td class="">
+                              Senior Engineer
+                            </td>
+                            <td class="">
+                              <a href="mailto:LWarren@pbs.org">LWarren@pbs.org</a>
+                            </td>
+                            <td class="">
+                              202-783-6793
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="">
+                              <span class="pbs-table__u-txt-highlight">Grace Berry</span>
+                            </td>
+                            <td class="">
+                              IAE North America
+                            </td>
+                            <td class="">
+                              Web Content Specialist
+                            </td>
+                            <td class="">
+                              <a href="mailto:LWarren@pbs.org">LWarren@pbs.org</a>
+                            </td>
+                            <td class="">
+                              202-783-6793
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="">
+                              <span class="pbs-table__u-txt-highlight">Lauren Guiterrez</span>
+                            </td>
+                            <td class="">
+                              WRKD, Colorado
+                            </td>
+                            <td class="">
+                              Senior Engineer
+                            </td>
+                            <td class="">
+                              <a href="mailto:LWarren@pbs.org">LWarren@pbs.org</a>
+                            </td>
+                            <td class="">
+                              202-783-6793
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="">
+                              <span class="pbs-table__u-txt-highlight">John Watkins</span>
+                            </td>
+                            <td class="">
+                              WGVU AM/FM/TV
+                            </td>
+                            <td class="">
+                              Communications Director, WARN
+                            </td>
+                            <td class="">
+                              <a href="mailto:LWarren@pbs.org">LWarren@pbs.org</a>
+                            </td>
+                            <td class="">
+                              202-783-6793
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
                     </div>
+                  </div><!-- /row -->
+
+                  <div class="row pbs-people-tiles js-pbs-people-tiles">
 
                     <div class="col-md-3">
                       <div class="pbs-people-tile pbs-people-tile--border" data-toggle="modal" data-target="#department">
                         <img class="pbs-people-tile__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kevin_oconnor_2011.jpg/440px-Kevin_oconnor_2011.jpg">
-                        <h3 class="pbs-people-tile__primary-text">Primary Text</h3>
-                        <h4 class="pbs-people-tile__sub-text">Sub Text</h4>
-                        <div class="pbs-people-tile__info">Job Title</div>
+                        <h3 class="pbs-people-tile__primary-text">Larry Warren</h3>
+                        <h4 class="pbs-people-tile__sub-text">KNME, New Mexico</h4>
+                        <div class="pbs-people-tile__info">Senior Engineer</div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
                           <i class="fa fa-envelope"></i>
-                          <a href="" class="pbs-people-tile__link">myEmail@pbs.org</a>
+                          <a href="mailto:LWarren@pbs.org" class="pbs-people-tile__link">LWarren@pbs.org</a>
                         </div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
-                          <i class="fa fa-phone"></i> 202-222-2222
+                          <i class="fa fa-phone"></i> 202-783-6793
                         </div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
                           <i class="fa fa-clock-o"></i> Pacific
@@ -202,15 +221,15 @@
                     <div class="col-md-3">
                       <div class="pbs-people-tile pbs-people-tile--border" data-toggle="modal" data-target="#department">
                         <img class="pbs-people-tile__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kevin_oconnor_2011.jpg/440px-Kevin_oconnor_2011.jpg">
-                        <h3 class="pbs-people-tile__primary-text">Primary Text</h3>
-                        <h4 class="pbs-people-tile__sub-text">Sub Text</h4>
-                        <div class="pbs-people-tile__info">Job Title</div>
+                        <h3 class="pbs-people-tile__primary-text">Grace Berry</h3>
+                        <h4 class="pbs-people-tile__sub-text">IAE North America</h4>
+                        <div class="pbs-people-tile__info">Web Content Specialist</div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
                           <i class="fa fa-envelope"></i>
-                          <a href="" class="pbs-people-tile__link">myEmail@pbs.org</a>
+                          <a href="mailto:GBerry@pbs.org" class="pbs-people-tile__link">GBerry@pbs.org</a>
                         </div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
-                          <i class="fa fa-phone"></i> 202-222-2222
+                          <i class="fa fa-phone"></i> 202-783-6793
                         </div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
                           <i class="fa fa-clock-o"></i> Pacific
@@ -221,18 +240,18 @@
                     <div class="col-md-3">
                       <div class="pbs-people-tile pbs-people-tile--border" data-toggle="modal" data-target="#department">
                         <img class="pbs-people-tile__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kevin_oconnor_2011.jpg/440px-Kevin_oconnor_2011.jpg">
-                        <h3 class="pbs-people-tile__primary-text">Primary Text</h3>
-                        <h4 class="pbs-people-tile__sub-text">Sub Text</h4>
-                        <div class="pbs-people-tile__info">Job Title</div>
+                        <h3 class="pbs-people-tile__primary-text">Lauren Gutierrez</h3>
+                        <h4 class="pbs-people-tile__sub-text">WRKD, Colorado</h4>
+                        <div class="pbs-people-tile__info">Senior Engineer</div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
                           <i class="fa fa-envelope"></i>
-                          <a href="" class="pbs-people-tile__link">myEmail@pbs.org</a>
+                          <a href="mailto:LGutierrez@pbs.org" class="pbs-people-tile__link">LGutierrez@pbs.org</a>
                         </div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
                           <i class="fa fa-phone"></i> 202-222-2222
                         </div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
-                          <i class="fa fa-clock-o"></i> Pacific
+                          <i class="fa fa-clock-o"></i> Mountain
                         </div>
                       </div>
                     </div>
@@ -240,18 +259,18 @@
                     <div class="col-md-3">
                       <div class="pbs-people-tile pbs-people-tile--border" data-toggle="modal" data-target="#department">
                         <img class="pbs-people-tile__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kevin_oconnor_2011.jpg/440px-Kevin_oconnor_2011.jpg">
-                        <h3 class="pbs-people-tile__primary-text">Primary Text</h3>
-                        <h4 class="pbs-people-tile__sub-text">Sub Text</h4>
-                        <div class="pbs-people-tile__info">Job Title</div>
+                        <h3 class="pbs-people-tile__primary-text">John Watkins</h3>
+                        <h4 class="pbs-people-tile__sub-text">WGVU AM/FM/TV</h4>
+                        <div class="pbs-people-tile__info">Communications Director, WARN</div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
                           <i class="fa fa-envelope"></i>
-                          <a href="" class="pbs-people-tile__link">myEmail@pbs.org</a>
+                          <a href="mailto:JWatkins@pbs.org" class="pbs-people-tile__link">JWatkins@pbs.org</a>
                         </div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
-                          <i class="fa fa-phone"></i> 202-222-2222
+                          <i class="fa fa-phone"></i> 202-783-6793
                         </div>
                         <div class="pbs-people-tile__info pbs-people-tile__info--border">
-                          <i class="fa fa-clock-o"></i> Pacific
+                          <i class="fa fa-clock-o"></i> Eastern
                         </div>
                       </div>
                     </div>
@@ -260,49 +279,6 @@
                 </div>
               </div><!-- /end pbs-section -->
 
-
-              <div id="nav-help" class="container-wide pbs-section pbs-section--mellow">
-                <div class="page-content-inner">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h2 class="pbs-section__title pbs-section__title--white">Help</h2>
-
-                        <div class="row">
-
-                          <div class="col-md-4">
-                            <div class="pbs-help-tile">
-                              <div class="pbs-help-tile__icon">
-                                <i class="fa fa-phone"></i>
-                              </div>
-                              <h3 class="pbs-help-tile__title">Test Title</h3>
-                              <div class="pbs-help-tile__sub-text">Some text in this place.</div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-4">
-                            <div class="pbs-help-tile">
-                              <div class="pbs-help-tile__icon"><i class="fa fa-envelope-o"></i></div>
-                              <h3 class="pbs-help-tile__title">Test Title</h3>
-                              <div class="pbs-help-tile__sub-text"><a class="pbs-help-tile__link" href="#">Some text in this place.</a></div>
-                            </div>
-                          </div>
-
-                          <div class="col-md-4">
-                            <div class="pbs-help-tile">
-                              <div class="pbs-help-tile__icon"><i class="fa fa-user"></i></div>
-                              <h3 class="pbs-help-tile__title">Test Title</h3>
-                              <div class="pbs-help-tile__sub-text">Some text in this place.</div>
-                            </div>
-                          </div>
-
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- /end pbs-section -->
 
             </div><!-- end - page-content -->
             
@@ -332,7 +308,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="department" tabindex="-1" data-width="960" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade pbs-people-modal" id="department" tabindex="-1" data-width="960" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-content">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -395,99 +371,23 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--[if lt IE 9]>
-      <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/respond.min.js"></script>
-      <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/excanvas.min.js"></script> 
-      <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/ie8.fix.min.js"></script> 
-    <![endif]-->
-    <!-- BEGIN CORE PLUGINS -->
-<!--     <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> -->
-<!--     <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
- -->   <!--  <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script> -->
-    <!-- END CORE PLUGINS -->
-
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-<!--     <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/moment.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/horizontal-timeline/horizontal-timeline.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script> -->
-<!--     <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script> -->
-    <!-- END PAGE LEVEL PLUGINS -->
-
-    <!-- BEGIN THEME GLOBAL SCRIPTS -->
-<!--     <script src="../theme/metronic_v4.7.5/theme/assets/global/scripts/app.min.js" type="text/javascript"></script>
- -->    <!-- END THEME GLOBAL SCRIPTS -->
-
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<!--     <script src="../theme/metronic_v4.7.5/theme/assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
- -->   <!--  <script src="../theme/metronic_v4.7.5/theme/assets/pages/scripts/ui-sweetalert.min.js" type="text/javascript"></script> -->
-    <!-- END PAGE LEVEL SCRIPTS -->
-
-    <!-- BEGIN THEME LAYOUT SCRIPTS -->
-
-    <!-- PBS Modified -->
-    <!-- <script src="../js/layout.js" type="text/javascript"></script> -->
-    <!-- END PBS Modified -->
-
     <script src="../dist/app.js" type="text/javascript"></script>
-
-<!--     <script src="../theme/metronic_v4.7.5/theme/assets/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
-    <script src="../theme/metronic_v4.7.5/theme/assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script> -->
-    <!-- END THEME LAYOUT SCRIPTS -->
 
     <script>
       $(document).ready(function() {
         $('.pbs-switch').on("click", function(){
           $(this).toggleClass('pbs-switch--isSwitched');
-          $('.js-pbs-people .col-md-3').toggleClass('col-md-12');
-          $('.js-pbs-people .pbs-people-tile').toggleClass('pbs-people-tile--isList');
-          $('.js-pbs-people .pbs-people-header').toggleClass('pbs-people-header--isVisible');
+          $('.js-pbs-people-tiles').toggleClass('pbs-people-tiles--isVisible');
+          $('.js-pbs-people-table').toggleClass('pbs-people-table--isVisible');
+        });
+        $('#people-table').DataTable({
+          "paging": false,
+          "info": false,
+          "searching": false,
+          "columnDefs": [{
+            "targets": [3,4],
+            "orderable": false
+          }]
         });
       });
     </script>
