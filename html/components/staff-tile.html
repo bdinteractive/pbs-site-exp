@@ -1,0 +1,48 @@
+{% comment %}
+<!-- SmartSnippets Variables
+Header=TextField
+Profile_Image=TextField
+Name=TextField
+Text=TextField
+Job_Title=TextField
+Email_Address=TextField
+Phone_Number=TextField
+Time_Zone=TextField
+Twitter=TextField
+Header_Color=Select|values=red,green,purple,yellow
+-->
+{% endcomment %}
+{% if Header %}
+<div class="col-md-3">
+{% else %}
+<div class="col-md-4">
+{% endif %}
+  <div class="pbs-people-tile pbs-people-tile--border">
+    {% if Header %}
+      <div class="pbs-people-tile__header pbs-people-tile__header--{{Header_Color}}">{{Header}}</div>
+    {% endif %}
+    <img class="pbs-people-tile__image" src={{Profile_Image}}>
+    <h3 class="pbs-people-tile__primary-text">{{Name}}</h3>
+    {% if Text %}
+      <p class="pbs-people-tile__text">{{Text}}</p>
+    {% endif %}
+    <div class="pbs-people-tile__info">{{Job_Title}}</div>
+    <div class="pbs-people-tile__info pbs-people-tile__info--border">
+      <i class="fa fa-envelope"></i>
+      <a href="mailto{{Email_Address}}" class="pbs-people-tile__link">{{Email_Address}}</a>
+    </div>
+    <div class="pbs-people-tile__info pbs-people-tile__info--border">
+      <i class="fa fa-phone"></i> {{Phone_Number}}
+    </div>
+    {% if Time_Zone %}
+    <div class="pbs-people-tile__info pbs-people-tile__info--border">
+      <i class="fa fa-clock-o"></i> {{Time_Zone}}
+    </div>
+    {% endif %}
+    {% if Twitter %}
+    <div class="pbs-people-tile__info pbs-people-tile__info--border">
+      <i class="fa fa-twitter"></i> {{Twitter}}
+    </div>
+    {% endif %}
+  </div>
+</div>

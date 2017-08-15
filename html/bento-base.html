@@ -1,0 +1,211 @@
+{% load cms_tags sekizai_tags filertags custom_menu_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>PBS Station Experience</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+      
+      <link href="{{ '/member-station/fonts/font-awesome.css'|filerfile }}" rel="stylesheet" type="text/css" />
+      <link href="{{ '/member-station/fonts/socicon.css'|filerfile }}" rel="stylesheet" type="text/css" />
+      
+      
+
+    {% render_block "css" %}
+    <link href="{{ '/member-station/pbs-site-experience.css'|filerfile }}" rel="stylesheet">
+
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2017 Webtrends Inc.  All rights reserved. -->
+    <script>
+    window.webtrendsAsyncInit=function(){
+        var dcs=new Webtrends.dcs().init({
+            dcsid:"dcs222vu0awnj0bhys62mel4h_4d7h",
+            domain:"statse.webtrendslive.com",
+            timezone:-5,
+            fpcdom:".workplace.pbs.org",
+            plugins:{
+                //hm:{src:"//s.webtrends.com/js/webtrends.hm.js"}
+            }
+            }).track();
+    };
+    (function(){
+        var s=document.createElement("script"); s.async=true; s.src="{{ '/member-station/webtrends.min.js'|filerfile }}";    
+        var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+    }());
+    </script>
+    <noscript><img alt="dcsimg" id="dcsimg" width="1" height="1" src="//statse.webtrendslive.com/dcs222vu0awnj0bhys62mel4h_4d7h/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.4.23&amp;dcssip=www.workplace.pbs.org"/></noscript>
+    <!-- END OF SmartSource Data Collector TAG v10.4.23 -->
+
+  </head>
+
+  <body class="page-container-bg-solid page-header-menu-fixed">
+  {% cms_toolbar %}
+
+    <div class="page-wrapper">
+      <div class="page-wrapper-row">
+
+        <div class="page-wrapper-top">
+          <div class="page-header">
+
+            <div class="page-header-menu">
+              <div class="container">
+
+                <div class="row">
+
+                  <div class="col-md-2">
+                    <a href="/" class="pbs-logo"></a>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="">
+                      <div class="row">
+
+                        <div class="col-md-12">
+                          <div class="hor-menu pull-right pbs-utils-menu">
+                            <ul class="nav navbar-nav">
+                              <li aria-haspopup="true" class="">
+                                <a href="#" class="">Discussion Forums</a>
+                              </li>
+                              <li aria-haspopup="true" class="">
+                                <a href="#">Station Announcements</a>
+                              </li>
+                            </ul>
+                          </div><!-- /end - hor-menu -->
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="hor-menu pull-right pbs-pri-menu">
+                            <ul class="nav navbar-nav">
+                              <li aria-haspopup="true" class="">
+                                <a href="/#nav-resources" class="js-nav-resources">Resources</a>
+                              </li>
+                              <li aria-haspopup="true" class="js-nav-events">
+                                <a href="/#nav-events">Events</a>
+                              </li>
+                              <li aria-haspopup="true" class="js-nav-newsletters">
+                                <a href="/#nav-newsletters">Newsletters</a>
+                              </li>
+                              <li aria-haspopup="true" class="js-nav-faq">
+                                <a href="/#nav-faq">FAQ</a>
+                              </li>
+                              <li aria-haspopup="true" class="js-nav-help">
+                                <a href="/#nav-help">Help</a>
+                              </li>
+                              <li aria-haspopup="true" class="">
+                                <a href="/people">
+                                  <i class="fa fa-search"></i>
+                                  Search for People
+                                </a>
+                              </li>
+                            </ul>
+                          </div><!-- /end - hor-menu -->
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /end - page-wrapper-row -->
+
+      <div class="page-wrapper-row full-height">
+
+      <div class="page-wrapper-middle">
+        <div class="page-container">
+          <div class="page-content-wrapper">
+
+
+
+            <div class="page-head pbs-page-head">
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-md-12">
+                     {% placeholder workplace-hero inherit%}
+                  </div>
+
+                </div><!-- end - row -->
+              </div><!-- end - container -->
+            </div><!-- end - page-head -->
+
+
+
+
+            <div class="page-content">
+
+              <div id="nav-resources" class="container pbs-section--header">
+                <div class="page-content-inner">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="pbs-section__title">X</h2>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
+
+
+
+              <div id="nav-newsletters" class="container pbs-section">
+                <div class="page-content-inner">
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="pbs-section__title">X</h2>
+                    </div>
+                    <div class="col-md-12 pbs-newsletters">
+                        
+                        {% placeholder Content inherit%}
+
+
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
+
+
+
+            </div><!-- end - page-content -->
+            
+          </div><!-- end - page-content-wrapper -->
+        </div><!-- end - page-container -->
+      </div><!-- end - page-wrapper-middle -->
+
+
+      </div><!-- /end - page-wrapper-row -->
+
+    </div><!-- /end - page-wrapper -->
+
+
+    {% render_block "js" %}
+    <script src="{{ '/member-station/app.js'|filerfile }}"></script>
+
+    <script>
+      $(document).ready(function() {
+
+      });
+    </script>
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script type="text/javascript">
+      window.__lc = window.__lc || {};
+      window.__lc.license = 5198651;
+      (function() {
+       var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+       lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+      })();
+    </script>
+    <!-- End of LiveChat code -->
+
+  </body>
+</html>​

@@ -1,0 +1,17 @@
+{% comment %}
+<!-- SmartSnippets Variables
+Number=TextField
+Title=TextField
+Percent=TextField
+-->
+{% endcomment %}
+<div class="col-md-6">
+  <div class="pbs-percent-tile">
+    <h2 class="pbs-percent-tile__primary-text">{{Number}}</h2>
+    <h4 class="pbs-percent-tile__sub-text">{{Title}}</h4>
+    <div class="pbs-percent-tile__percent-bar-bg">
+      <div class="pbs-percent-tile__percent-bar-fg" style="width:{{Percent}}%;"></div>
+    </div>
+    <div class="pbs-percent-tile__small-text">{{Percent}}%</div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+{% load sekizai_tags smartsnippets_tags filertags %}
+{% comment %}
+<!-- SmartSnippets Variables
+Link_Text=TextField
+Link_URL=TextField
+Text=TextAreaField
+Discipline_Name=TextField
+Discipline_Modal_ID=TextField
+-->
+{% endcomment %}
+<tr>
+  <td class="pbs-departments-list__item">
+    <a href={{Link_URL}} class="pbs-departments-list__link">{{Link_Text}} ›</a>
+  </td>
+  <td class="pbs-departments-list__item pbs-departments-list__item--50">
+    <p>{{Text}}</p>
+  </td>
+  <td class="pbs-departments-list__item">
+    <a href="#" data-toggle="modal" data-target=#{{Discipline_Modal_ID}}>{{Discipline_Name}}</a>
+  </td>
+</tr>

@@ -1,0 +1,177 @@
+{% load sekizai_tags smartsnippets_tags filertags %}
+{% comment %}
+<!-- SmartSnippets Variables
+Title=TextField
+Sub_Title=TextField
+Text_Short=TextAreaField
+Text_Large=TextField
+Link_Text_01=TextField
+Link_URL_01=TextField
+Link_Text_02=TextField
+Link_URL_02=TextField
+Link_Text_03=TextField
+Link_URL_03=TextField
+Link_Text_04=TextField
+Link_URL_04=TextField
+Link_Text_05=TextField
+Link_URL_05=TextField
+Link_Text_06=TextField
+Link_URL_06=TextField
+Link_Text_07=TextField
+Link_URL_07=TextField
+Link_Text_08=TextField
+Link_URL_08=TextField
+Link_Text_09=TextField
+Link_URL_09=TextField
+Link_Text_10=TextField
+Link_URL_10=TextField
+Link_Text_11=TextField
+Link_URL_11=TextField
+Link_Text_12=TextField
+Link_URL_12=TextField
+Section_Title_01=TextField
+Section_Title_02=TextField
+Section_Title_03=TextField
+Social_Facebook=TextField
+Social_Twitter=TextField
+Social_Mail=TextField
+Modal_ID=TextField
+-->
+{% endcomment %}
+
+<div class="col-md-4 col-xs-12">
+  <div class="pbs-department">
+    <div class="pbs-department__header">
+        <h3 class="pbs-department__title">{{Title}}</h3>
+        <h4 class="pbs-department__sub-title">{{Sub_Title}}</h4>
+    </div>
+    <div class="pbs-department__content">
+      <div class="js__department pbs-department__description">
+          <p>{{Text_Short}}</p>
+          <a href="#" data-toggle="modal" data-target="#{{Modal_ID}}">Read More ›</a>
+      </div>
+      {% if Link_Text_01 %}
+        <ul class="pbs-list pbs-list--content">
+          {% if Link_Text_01 %}
+            <li class="pbs-list__item"><a href={{Link_URL_01}}>{{Link_Text_01}} ›</a></li>
+          {% endif %}
+          {% if Link_Text_02 %}
+            <li class="pbs-list__item"><a href={{Link_URL_02}}>{{Link_Text_02}} ›</a></li>
+          {% endif %}
+          {% if Link_Text_03 %}
+            <li class="pbs-list__item"><a href={{Link_URL_03}}>{{Link_Text_03}} ›</a></li>
+          {% endif %}
+          {% if Link_Text_04 %}
+            <li class="pbs-list__item"><a href={{Link_URL_04}}>{{Link_Text_04}} ›</a></li>
+          {% endif %}
+          {% if Link_Text_05 %}
+            <li class="pbs-list__item"><a href={{Link_URL_05}}>{{Link_Text_05}} ›</a></li>
+          {% endif %}
+        </ul>
+      {% endif %}
+    </div>
+    <div class="socicons">
+        {% if Social_Facebook %}
+          <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href={{Social_Facebook}}></a>
+        {% endif %}
+        {% if Social_Twitter %}
+          <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href={{Social_Twitter}}></a>
+        {% endif %}
+        {% if Social_Mail %}
+          <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href={{Social_Mail}}></a>
+        {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="{{Modal_ID}}" tabindex="-1" data-width="960" role="dialog">
+  <div class="modal-content">
+    <div class="modal-header pbs-department-modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h3 class="pbs-department-modal-header__title">{{Title}}</h3>
+      <h4 class="pbs-department-modal-header__subTitle">{{Sub_Title}}</h4>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-md-12 pbs-department-modal-text">
+          {% autoescape off %}
+            {{Text_Large}}
+          {% endautoescape %}
+        </div>
+        <div class="col-md-4">
+          {% if Section_Title_01 %}
+            <h3 class="pbs-list__header">{{Section_Title_01}}</h3>
+          {% endif %}
+          {% if Link_Text_01 %}
+            <ul class="pbs-list pbs-list--content">
+              {% if Link_Text_01 %}
+                <li class="pbs-list__item"><a href={{Link_URL_01}}>{{Link_Text_01}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_02 %}
+                <li class="pbs-list__item"><a href={{Link_URL_02}}>{{Link_Text_02}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_03 %}
+                <li class="pbs-list__item"><a href={{Link_URL_03}}>{{Link_Text_03}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_04 %}
+                <li class="pbs-list__item"><a href={{Link_URL_04}}>{{Link_Text_04}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_05 %}
+                <li class="pbs-list__item"><a href={{Link_URL_05}}>{{Link_Text_05}} ›</a></li>
+              {% endif %}
+            </ul>
+          {% endif %}
+        </div>
+        <div class="col-md-4">
+          {% if Section_Title_02 %}
+            <h3 class="pbs-list__header">{{Section_Title_02}}</h3>
+          {% endif %}
+          {% if Link_Text_06 %}
+            <ul class="pbs-list pbs-list--content">
+              {% if Link_Text_06 %}
+                <li class="pbs-list__item"><a href={{Link_URL_06}}>{{Link_Text_06}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_07 %}
+                <li class="pbs-list__item"><a href={{Link_URL_07}}>{{Link_Text_07}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_08 %}
+                <li class="pbs-list__item"><a href={{Link_URL_08}}>{{Link_Text_08}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_09 %}
+                <li class="pbs-list__item"><a href={{Link_URL_09}}>{{Link_Text_09}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_10 %}
+                <li class="pbs-list__item"><a href={{Link_URL_10}}>{{Link_Text_10}} ›</a></li>
+              {% endif %}
+            </ul>
+          {% endif %}
+        </div>
+        <div class="col-md-4">
+          {% if Section_Title_03 %}
+            <h3 class="pbs-list__header">{{Section_Title_03}}</h3>
+          {% endif %}
+          {% if Link_Text_11 %}
+            <ul class="pbs-list pbs-list--content">
+              {% if Link_Text_11 %}
+                <li class="pbs-list__item"><a href={{Link_URL_11}}>{{Link_Text_11}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_12 %}
+                <li class="pbs-list__item"><a href={{Link_URL_12}}>{{Link_Text_12}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_13 %}
+                <li class="pbs-list__item"><a href={{Link_URL_13}}>{{Link_Text_13}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_14 %}
+                <li class="pbs-list__item"><a href={{Link_URL_14}}>{{Link_Text_14}} ›</a></li>
+              {% endif %}
+              {% if Link_Text_15 %}
+                <li class="pbs-list__item"><a href={{Link_URL_15}}>{{Link_Text_15}} ›</a></li>
+              {% endif %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

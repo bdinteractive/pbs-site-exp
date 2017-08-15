@@ -1,0 +1,33 @@
+{% comment %}
+<!-- SmartSnippets Variables
+First_Name=TextField
+Last_Name=TextField
+Title=TextField
+Org=TextField
+Email=TextField
+Phone_Number=TextField
+Council_Name=TextField
+-->
+{% endcomment %}
+<tr>
+  <td class="">
+    <span class="pbs-table__u-txt-highlight">{{Last_Name}}, {{First_Name}}</span>
+  </td>
+  <td class="">
+    {{Title}}
+  </td>
+  <td class="">
+    {{Org}}
+  </td>
+  <td class="">
+    <a href="mailto:{{Email}}">{{Email}}</a>
+  </td>
+  <td class="">
+    {{Phone_Number}}
+  </td>
+  <td class="">
+    {{Council_Name}}
+  </td>
+</tr>
+
+

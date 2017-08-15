@@ -1,0 +1,418 @@
+{% load cms_tags sekizai_tags filertags thumbnail page_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PBS Station Experience</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+      
+      <link href="{{ '/member-station/fonts/font-awesome.css'|filerfile }}" rel="stylesheet" type="text/css" />
+      <link href="{{ '/member-station/fonts/socicon.css'|filerfile }}" rel="stylesheet" type="text/css" />
+      
+      
+
+    {% render_block "css" %}
+    <link href="{{ '/member-station/pbs-site-experience.css'|filerfile }}" rel="stylesheet">
+
+  </head>
+
+  <body class="page-container-bg-solid page-header-menu-fixed">
+  {% cms_toolbar %}
+
+    <div class="page-wrapper">
+      <div class="page-wrapper-row">
+
+        <div class="page-wrapper-top">
+          <div class="page-header">
+
+            <div class="page-header-menu">
+              <div class="container">
+
+                <a href="/" class="pbs-logo"></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /end - page-wrapper-row -->
+
+      <div class="page-wrapper-row full-height">
+
+      <div class="page-wrapper-middle">
+        <div class="page-container">
+          <div class="page-content-wrapper">
+
+
+
+            <div class="page-head pbs-section pbs-section--evening">
+              <div class="container">
+                <div class="row">
+
+                  <form class="form-horizontal pbs-search-form">
+                    <div class="form-group form-group-lg">
+
+                      <div class="col-md-4">
+                        <h5 class="pbs-search-form__label">Name</h5>
+                        <input type="text" class="form-control pbs-search-form__input" placeholder="">
+                      </div>
+                      <div class="col-md-3">
+                        <h5 class="pbs-search-form__label">Discipline</h5>
+                        <select class="form-control input-lg pbs-search-form__input">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                          <option>Option 5</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3">
+                        <h5 class="pbs-search-form__label">Organization</h5>
+                        <select class="form-control input-lg pbs-search-form__input">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                          <option>Option 5</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="input-group input-group-lg">
+                          <span class="input-group-btn">
+                            <button type="search" class="btn blue pbs-search-form__button">Search</button>
+                          </span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </form>
+
+
+                </div><!-- end - row -->
+              </div><!-- end - container -->
+            </div><!-- end - page-head -->
+
+
+
+            <div class="page-content">
+
+
+              <div class="container pbs-section">
+                <div class="page-content-inner">
+                  <div class="row">
+
+                    <div class="col-md-12">
+                      <div class="pbs-switch">
+                        <span class="pbs-switch__switcher"></span>
+                        <span class="pbs-switch__button pbs-switch__button--knockout">Grid View</span>
+                        <span class="pbs-switch__button">List View</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row pbs-people-table pbs-people-table--isVisible js-pbs-people-table">
+                    <div class="col-md-12">
+
+                      <table id="people-table" class="pbs-table" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>PBS Location</th>
+                            <th>Title</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="">
+                              <span class="pbs-table__u-txt-highlight">Larry Warren</span>
+                            </td>
+                            <td class="">
+                              KNME, New Mexico
+                            </td>
+                            <td class="">
+                              Senior Engineer
+                            </td>
+                            <td class="">
+                              <a href="mailto:LWarren@pbs.org">LWarren@pbs.org</a>
+                            </td>
+                            <td class="">
+                              202-783-6793
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="">
+                              <span class="pbs-table__u-txt-highlight">Grace Berry</span>
+                            </td>
+                            <td class="">
+                              IAE North America
+                            </td>
+                            <td class="">
+                              Web Content Specialist
+                            </td>
+                            <td class="">
+                              <a href="mailto:LWarren@pbs.org">LWarren@pbs.org</a>
+                            </td>
+                            <td class="">
+                              202-783-6793
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="">
+                              <span class="pbs-table__u-txt-highlight">Lauren Guiterrez</span>
+                            </td>
+                            <td class="">
+                              WRKD, Colorado
+                            </td>
+                            <td class="">
+                              Senior Engineer
+                            </td>
+                            <td class="">
+                              <a href="mailto:LWarren@pbs.org">LWarren@pbs.org</a>
+                            </td>
+                            <td class="">
+                              202-783-6793
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="">
+                              <span class="pbs-table__u-txt-highlight">John Watkins</span>
+                            </td>
+                            <td class="">
+                              WGVU AM/FM/TV
+                            </td>
+                            <td class="">
+                              Communications Director, WARN
+                            </td>
+                            <td class="">
+                              <a href="mailto:LWarren@pbs.org">LWarren@pbs.org</a>
+                            </td>
+                            <td class="">
+                              202-783-6793
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div><!-- /row -->
+
+                  <div class="row pbs-people-tiles js-pbs-people-tiles">
+
+                    <div class="col-md-3">
+                      <div class="pbs-people-tile pbs-people-tile--border" data-toggle="modal" data-target="#department">
+                        <img class="pbs-people-tile__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kevin_oconnor_2011.jpg/440px-Kevin_oconnor_2011.jpg">
+                        <h3 class="pbs-people-tile__primary-text">Larry Warren</h3>
+                        <h4 class="pbs-people-tile__sub-text">KNME, New Mexico</h4>
+                        <div class="pbs-people-tile__info">Senior Engineer</div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-envelope"></i>
+                          <a href="mailto:LWarren@pbs.org" class="pbs-people-tile__link">LWarren@pbs.org</a>
+                        </div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-phone"></i> 202-783-6793
+                        </div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-clock-o"></i> Pacific
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="pbs-people-tile pbs-people-tile--border" data-toggle="modal" data-target="#department">
+                        <img class="pbs-people-tile__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kevin_oconnor_2011.jpg/440px-Kevin_oconnor_2011.jpg">
+                        <h3 class="pbs-people-tile__primary-text">Grace Berry</h3>
+                        <h4 class="pbs-people-tile__sub-text">IAE North America</h4>
+                        <div class="pbs-people-tile__info">Web Content Specialist</div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-envelope"></i>
+                          <a href="mailto:GBerry@pbs.org" class="pbs-people-tile__link">GBerry@pbs.org</a>
+                        </div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-phone"></i> 202-783-6793
+                        </div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-clock-o"></i> Pacific
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="pbs-people-tile pbs-people-tile--border" data-toggle="modal" data-target="#department">
+                        <img class="pbs-people-tile__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kevin_oconnor_2011.jpg/440px-Kevin_oconnor_2011.jpg">
+                        <h3 class="pbs-people-tile__primary-text">Lauren Gutierrez</h3>
+                        <h4 class="pbs-people-tile__sub-text">WRKD, Colorado</h4>
+                        <div class="pbs-people-tile__info">Senior Engineer</div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-envelope"></i>
+                          <a href="mailto:LGutierrez@pbs.org" class="pbs-people-tile__link">LGutierrez@pbs.org</a>
+                        </div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-phone"></i> 202-222-2222
+                        </div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-clock-o"></i> Mountain
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="pbs-people-tile pbs-people-tile--border" data-toggle="modal" data-target="#department">
+                        <img class="pbs-people-tile__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kevin_oconnor_2011.jpg/440px-Kevin_oconnor_2011.jpg">
+                        <h3 class="pbs-people-tile__primary-text">John Watkins</h3>
+                        <h4 class="pbs-people-tile__sub-text">WGVU AM/FM/TV</h4>
+                        <div class="pbs-people-tile__info">Communications Director, WARN</div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-envelope"></i>
+                          <a href="mailto:JWatkins@pbs.org" class="pbs-people-tile__link">JWatkins@pbs.org</a>
+                        </div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-phone"></i> 202-783-6793
+                        </div>
+                        <div class="pbs-people-tile__info pbs-people-tile__info--border">
+                          <i class="fa fa-clock-o"></i> Eastern
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
+
+
+            </div><!-- end - page-content -->
+            
+          </div><!-- end - page-content-wrapper -->
+        </div><!-- end - page-container -->
+      </div><!-- end - page-wrapper-middle -->
+
+
+
+
+
+      <!-- <div style="height:2000px;"></div> -->
+
+
+      </div><!-- /end - page-wrapper-row -->
+
+    </div><!-- /end - page-wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade pbs-people-modal" id="department" tabindex="-1" data-width="960" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="modal-body">
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="pbs-people-tile">
+            <img class="pbs-people-tile__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kevin_oconnor_2011.jpg/440px-Kevin_oconnor_2011.jpg">
+            <h3 class="pbs-people-tile__primary-text">Primary Text</h3>
+            <h4 class="pbs-people-tile__sub-text">Sub Text</h4>
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="pbs-people-tile">
+            <div class="pbs-people-tile__info">
+              <span class="pbs-people-tile__info-title">Title:</span> Web Content Specialist
+            </div>
+            <div class="pbs-people-tile__info">
+              <span class="pbs-people-tile__info-title">Email:</span> <a href="" class="pbs-people-tile__link">myEmail@pbs.org</a>
+            </div>
+            <div class="pbs-people-tile__info">
+              <span class="pbs-people-tile__info-title">Phone:</span> 202-222-2222
+            </div>
+            <div class="pbs-people-tile__info">
+              <span class="pbs-people-tile__info-title">Timezone:</span> Pacific
+            </div>
+            <div class="pbs-people-tile__info">
+              <span class="pbs-people-tile__info-title">Disipline:</span> Development
+            </div>
+            <div class="socicons">
+              <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-dark bg-hover-grey-salsa font-white bg-hover-white socicon-facebook tooltips" href="#"></a>
+              <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href="#"></a>
+              <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="#"></a>
+            </div>
+          </div>
+
+        </div>
+
+         <div class="col-md-6">
+
+          <div class="pbs-people-tile">
+            <div class="pbs-people-tile__info">
+            <h4 class="pbs-people-tile__info-title">Job Functions</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit auctor lobortis. Aliquam interdum eu elit id pretium. Duis luctus, magna id pulvinar ultrices, ipsum ante placerat libero, nec blandit purus massa ultricies sem. Pellentesque mi tortor, vestibulum vel sodales vel, iaculis vitae lectus. Aenean sollicitudin ac ex et cursus. Suspendisse sagittis ultricies tincidunt.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    {% render_block "js" %}
+    <script src="{{ '/member-station/app.js'|filerfile }}"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.pbs-switch').on("click", function(){
+          $(this).toggleClass('pbs-switch--isSwitched');
+          $('.js-pbs-people-tiles').toggleClass('pbs-people-tiles--isVisible');
+          $('.js-pbs-people-table').toggleClass('pbs-people-table--isVisible');
+        });
+        $('#people-table').DataTable({
+          "paging": false,
+          "info": false,
+          "searching": false,
+          "columnDefs": [{
+            "targets": [3,4],
+            "orderable": false
+          }]
+        });
+      });
+    </script>
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script type="text/javascript">
+      window.__lc = window.__lc || {};
+      window.__lc.license = 5198651;
+      (function() {
+       var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+       lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+      })();
+    </script>
+    <!-- End of LiveChat code -->
+    
+  </body>
+</html>​

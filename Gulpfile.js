@@ -22,6 +22,7 @@ gulp.task('js', function() {
       './theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js',
       './theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js',
       './theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js',
+      './theme/metronic_v4.7.5/theme/assets/global/plugins/datatables/datatables.min.js',
       './theme/metronic_v4.7.5/theme/assets/global/scripts/app.min.js',
       './theme/metronic_v4.7.5/theme/assets/pages/scripts/ui-sweetalert.min.js',
       './js/layout.js'

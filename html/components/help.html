@@ -1,0 +1,24 @@
+{% load sekizai_tags smartsnippets_tags filertags %}
+<div class="col-md-4">
+  <div class="pbs-help-tile">
+    <div class="pbs-help-tile__icon">
+      {% if Help_Type == 'Phone' %}
+        <i class="fa fa-phone"></i>
+      {% endif %}
+      {% if Help_Type == 'Email' %}
+        <i class="fa fa-envelope-o"></i>
+      {% endif %}
+      {% if Help_Type == 'Rep' %}
+        <i class="fa fa-user"></i>
+      {% endif %}
+    </div>
+    <h3 class="pbs-help-tile__title">{{Title}}</h3>
+    <div class="pbs-help-tile__sub-text">
+      {% if Help_Type == 'Phone' %}
+        {{Text}}
+      {% else %}
+        <a class="pbs-help-tile__link" href={{Link}}>{{Text}}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

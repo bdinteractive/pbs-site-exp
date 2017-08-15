@@ -1,0 +1,11 @@
+{% load sekizai_tags smartsnippets_tags filertags %}
+{% comment %}
+<!-- SmartSnippets Variables
+Text=TextField
+URL=TextField
+Button_Type=Select|values=primary,secondary
+-->
+{% endcomment %}
+<a href="{{URL}}" class="btn pbs-btn pbs-btn--{{Button_Type}} btn-lg" style="margin-top:20px;">
+  {{Text}}
+</a>
