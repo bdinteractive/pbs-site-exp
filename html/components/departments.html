@@ -29,6 +29,12 @@ Link_Text_11=TextField
 Link_URL_11=TextField
 Link_Text_12=TextField
 Link_URL_12=TextField
+Link_Text_13=TextField
+Link_URL_13=TextField
+Link_Text_14=TextField
+Link_URL_14=TextField
+Link_Text_15=TextField
+Link_URL_15=TextField
 Section_Title_01=TextField
 Section_Title_02=TextField
 Section_Title_03=TextField
@@ -48,24 +54,24 @@ Modal_ID=TextField
     <div class="pbs-department__content">
       <div class="js__department pbs-department__description">
           <p>{{Text_Short}}</p>
-          <a href="#" data-toggle="modal" data-target="#{{Modal_ID}}">Read More ›</a>
+          <a href="#" data-toggle="modal" data-target="#{{Modal_ID}}">Read More</a>
       </div>
       {% if Link_Text_01 %}
         <ul class="pbs-list pbs-list--content">
           {% if Link_Text_01 %}
-            <li class="pbs-list__item"><a href={{Link_URL_01}}>{{Link_Text_01}} ›</a></li>
+            <li class="pbs-list__item"><a href={{Link_URL_01}}>{{Link_Text_01}}</a></li>
           {% endif %}
           {% if Link_Text_02 %}
-            <li class="pbs-list__item"><a href={{Link_URL_02}}>{{Link_Text_02}} ›</a></li>
+            <li class="pbs-list__item"><a href={{Link_URL_02}}>{{Link_Text_02}}</a></li>
           {% endif %}
           {% if Link_Text_03 %}
-            <li class="pbs-list__item"><a href={{Link_URL_03}}>{{Link_Text_03}} ›</a></li>
+            <li class="pbs-list__item"><a href={{Link_URL_03}}>{{Link_Text_03}}</a></li>
           {% endif %}
           {% if Link_Text_04 %}
-            <li class="pbs-list__item"><a href={{Link_URL_04}}>{{Link_Text_04}} ›</a></li>
+            <li class="pbs-list__item"><a href={{Link_URL_04}}>{{Link_Text_04}}</a></li>
           {% endif %}
           {% if Link_Text_05 %}
-            <li class="pbs-list__item"><a href={{Link_URL_05}}>{{Link_Text_05}} ›</a></li>
+            <li class="pbs-list__item"><a href={{Link_URL_05}}>{{Link_Text_05}}</a></li>
           {% endif %}
         </ul>
       {% endif %}
@@ -78,7 +84,7 @@ Modal_ID=TextField
           <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-twitter tooltips" href={{Social_Twitter}}></a>
         {% endif %}
         {% if Social_Mail %}
-          <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href={{Social_Mail}}></a>
+          <a class="socicon-btn socicon-btn-circle socicon-sm socicon-solid bg-blue bg-hover-grey-salsa font-white bg-hover-white socicon-outlook tooltips" href="mailto:{{Social_Mail}}"></a>
         {% endif %}
     </div>
   </div>
@@ -106,19 +112,19 @@ Modal_ID=TextField
           {% if Link_Text_01 %}
             <ul class="pbs-list pbs-list--content">
               {% if Link_Text_01 %}
-                <li class="pbs-list__item"><a href={{Link_URL_01}}>{{Link_Text_01}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_01}}>{{Link_Text_01}}</a></li>
               {% endif %}
               {% if Link_Text_02 %}
-                <li class="pbs-list__item"><a href={{Link_URL_02}}>{{Link_Text_02}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_02}}>{{Link_Text_02}}</a></li>
               {% endif %}
               {% if Link_Text_03 %}
-                <li class="pbs-list__item"><a href={{Link_URL_03}}>{{Link_Text_03}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_03}}>{{Link_Text_03}}</a></li>
               {% endif %}
               {% if Link_Text_04 %}
-                <li class="pbs-list__item"><a href={{Link_URL_04}}>{{Link_Text_04}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_04}}>{{Link_Text_04}}</a></li>
               {% endif %}
               {% if Link_Text_05 %}
-                <li class="pbs-list__item"><a href={{Link_URL_05}}>{{Link_Text_05}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_05}}>{{Link_Text_05}}</a></li>
               {% endif %}
             </ul>
           {% endif %}
@@ -130,19 +136,19 @@ Modal_ID=TextField
           {% if Link_Text_06 %}
             <ul class="pbs-list pbs-list--content">
               {% if Link_Text_06 %}
-                <li class="pbs-list__item"><a href={{Link_URL_06}}>{{Link_Text_06}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_06}}>{{Link_Text_06}}</a></li>
               {% endif %}
               {% if Link_Text_07 %}
-                <li class="pbs-list__item"><a href={{Link_URL_07}}>{{Link_Text_07}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_07}}>{{Link_Text_07}}</a></li>
               {% endif %}
               {% if Link_Text_08 %}
-                <li class="pbs-list__item"><a href={{Link_URL_08}}>{{Link_Text_08}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_08}}>{{Link_Text_08}}</a></li>
               {% endif %}
               {% if Link_Text_09 %}
-                <li class="pbs-list__item"><a href={{Link_URL_09}}>{{Link_Text_09}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_09}}>{{Link_Text_09}}</a></li>
               {% endif %}
               {% if Link_Text_10 %}
-                <li class="pbs-list__item"><a href={{Link_URL_10}}>{{Link_Text_10}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_10}}>{{Link_Text_10}}</a></li>
               {% endif %}
             </ul>
           {% endif %}
@@ -154,19 +160,19 @@ Modal_ID=TextField
           {% if Link_Text_11 %}
             <ul class="pbs-list pbs-list--content">
               {% if Link_Text_11 %}
-                <li class="pbs-list__item"><a href={{Link_URL_11}}>{{Link_Text_11}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_11}}>{{Link_Text_11}}</a></li>
               {% endif %}
               {% if Link_Text_12 %}
-                <li class="pbs-list__item"><a href={{Link_URL_12}}>{{Link_Text_12}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_12}}>{{Link_Text_12}}</a></li>
               {% endif %}
               {% if Link_Text_13 %}
-                <li class="pbs-list__item"><a href={{Link_URL_13}}>{{Link_Text_13}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_13}}>{{Link_Text_13}}</a></li>
               {% endif %}
               {% if Link_Text_14 %}
-                <li class="pbs-list__item"><a href={{Link_URL_14}}>{{Link_Text_14}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_14}}>{{Link_Text_14}}</a></li>
               {% endif %}
               {% if Link_Text_15 %}
-                <li class="pbs-list__item"><a href={{Link_URL_15}}>{{Link_Text_15}} ›</a></li>
+                <li class="pbs-list__item"><a href={{Link_URL_15}}>{{Link_Text_15}}</a></li>
               {% endif %}
             </ul>
           {% endif %}

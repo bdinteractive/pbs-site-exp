@@ -1,0 +1,33 @@
+{% load sekizai_tags smartsnippets_tags filertags %}
+{% comment %}
+<!-- SmartSnippets Variables
+Title=TextField
+Text=TextAreaField
+Button_1_Text=TextField
+Button_1_URL=TextField
+Button_2_Text=TextField
+Button_2_URL=TextField
+Video_Text=TextField
+Video_URL=TextField
+-->
+{% endcomment %}
+<h1 class="pbs-page-head__title">{{Title}}</h1>
+{% if Text %}
+  <p class="pbs-page-head__text">{{Text}}</p>
+{% endif %}
+
+{% if Button_1_Text %}
+<div class="pbs-page-head__btn-group">
+  <a href="{{Button_1_URL}}" class="btn pbs-page-head__btn btn-lg" type="button">{{Button_1_Text}}</a>
+  {% if Button_2_Text %}
+    <a href="{{Button_2_URL}}" class="btn pbs-page-head__btn btn-lg" type="button">{{Button_2_Text}}</a>
+  {% endif %}
+</div>
+{% endif %}
+
+{% if Video_Text %}
+  <div class="pbs-page-head__video">
+    <a href="{{Video_URL}}" class="btn pbs-page-head__btn pbs-page-head__btn--play btn-lg" type="button"><i class="fa fa-play" aria-hidden="true"></i></a>
+    <h5 class="pbs-page-head__playBtnText">{{Video_Text}}</h5>
+  </div>
+{% endif %}

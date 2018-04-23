@@ -4,8 +4,9 @@
 Text=TextField
 URL=TextField
 Button_Type=Select|values=primary,secondary
+Target=Select|values=_self,_blank
 -->
 {% endcomment %}
-<a href="{{URL}}" class="btn pbs-btn pbs-btn--{{Button_Type}} btn-lg" style="margin-top:20px;">
+<a href="{{URL}}" class="btn pbs-btn pbs-btn--{{Button_Type}} btn-lg" target="{{Target}}">
   {{Text}}
 </a>

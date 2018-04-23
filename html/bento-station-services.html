@@ -4,18 +4,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>PBS Station Experience</title>
+    <title>myPBS Member Workplace - Resource Center</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-      
+
       <link href="{{ '/member-station/fonts/font-awesome.css'|filerfile }}" rel="stylesheet" type="text/css" />
       <link href="{{ '/member-station/fonts/socicon.css'|filerfile }}" rel="stylesheet" type="text/css" />
-      
-      
+
+
 
     {% render_block "css" %}
     <link href="{{ '/member-station/pbs-site-experience.css'|filerfile }}" rel="stylesheet">
@@ -35,7 +35,7 @@
             }).track();
     };
     (function(){
-        var s=document.createElement("script"); s.async=true; s.src="{{ '/member-station/webtrends.min.js'|filerfile }}";    
+        var s=document.createElement("script"); s.async=true; s.src="{{ '/member-station/webtrends.min.js'|filerfile }}";
         var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
     }());
     </script>
@@ -52,15 +52,20 @@
 
         <div class="page-wrapper-top">
           <div class="page-header">
-
-            <div class="page-header-menu">
+            <div class="page-header-top">
               <div class="container">
 
-                <a href="/" class="pbs-logo"></a>
-                
-              </div>
-            </div>
-          </div>
+                <div class="row">
+
+                  <div class="col-md-3">
+                    <a href="/" class="pbs-logo"></a>
+                  </div>
+
+                </div><!-- /end - row -->
+
+              </div><!-- /end - container -->
+            </div><!-- /end - page-header-top -->
+          </div><!-- /end - page-header -->
         </div>
 
       </div><!-- /end - page-wrapper-row -->
@@ -73,7 +78,7 @@
 
 
 
-            <div class="page-head pbs-section pbs-section--mellow">
+            <div class="page-head pbs-page-head pbs-section pbs-section--mellow">
               <div class="container">
                 <div class="row">
 
@@ -93,10 +98,8 @@
                         <h2 class="pbs-section__title">Station Services Coverage Areas</h2>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-12 pbs-station-map">
-                        {% placeholder Station-Services-Map inherit%}
-                      </div>
+                    <div class="col-md-12 pbs-station-map">
+                      {% placeholder Station-Services-Map inherit%}
                     </div>
                     <div class="row">
 
@@ -176,7 +179,7 @@
 
                       <div class="col-md-12 text-center">
                         <button class="btn pbs-btn pbs-btn--primary btn-lg js-showHide-btn" type="button">
-                          <i class="fa fa-plus js-showHide-btn-ico" aria-hidden="true"></i> 
+                          <i class="fa fa-plus js-showHide-btn-ico" aria-hidden="true"></i>
                           <span class="js-showHide-btn-txt" data-pri-text="Show More FAQ" data-alt-text="Show Less FAQ" data-alt="">Show More FAQ</span>
                         </button>
                       </div>
@@ -208,7 +211,7 @@
 
                       <div class="col-md-12 text-center">
                         <button class="btn pbs-btn pbs-btn--primary btn-lg js-showHide-btn" type="button">
-                          <i class="fa fa-plus js-showHide-btn-ico" aria-hidden="true"></i> 
+                          <i class="fa fa-plus js-showHide-btn-ico" aria-hidden="true"></i>
                           <span class="js-showHide-btn-txt" data-pri-text="Show More Communications" data-alt-text="Show Less Communications" data-alt="">Show More Communications</span>
                         </button>
                       </div>
@@ -218,11 +221,30 @@
                 </div>
               </div><!-- /end pbs-section -->
 
+              <div id="nav-help" class="container-wide pbs-section pbs-section--help-bg">
+                <div class="page-content-inner">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="pbs-section__title pbs-section__title--white">Help</h2>
+
+                        <div class="row">
+
+                          {% placeholder Help inherit%}
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
+
 
 
 
             </div><!-- end - page-content -->
-            
+
           </div><!-- end - page-content-wrapper -->
         </div><!-- end - page-container -->
       </div><!-- end - page-wrapper-middle -->
@@ -284,4 +306,5 @@
     <!-- End of LiveChat code -->
 
   </body>
-</html>​
+</html>
+​

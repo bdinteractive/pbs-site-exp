@@ -15,7 +15,7 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
 // @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "../sass/tables-pbs-modified";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
@@ -44,7 +44,7 @@
 
 // Components w/ JavaScript
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
-// @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
 // @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
 // @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
 
@@ -60,25 +60,25 @@
 @import "../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch";
 @import "../theme/metronic_v4.7.5/theme/assets/global/plugins/bootstrap-modal/css/bootstrap-modal";
 
-// BEGIN THEME GLOBAL STYLES 
+// BEGIN THEME GLOBAL STYLES
 // @import "../theme/metronic_v4.7.5/theme/assets/global/css/components-rounded";
 
 // Global settings
 $theme-style: 'rounded';
 $theme-type:  'default';
 
-@import '../theme/metronic_v4.7.5/theme/sass/global/_variables';             
+@import '../theme/metronic_v4.7.5/theme/sass/global/_variables';
 @import '../theme/metronic_v4.7.5/theme/sass/global/components/_mixins';
 
 // General CSS Reset
-@import '../theme/metronic_v4.7.5/theme/sass/global/components/_reset-general';  
+@import '../theme/metronic_v4.7.5/theme/sass/global/components/_reset-general';
 
-// General Components  
-@import '../theme/metronic_v4.7.5/theme/sass/global/components/_typography';      
-@import '../theme/metronic_v4.7.5/theme/sass/global/components/_font-icons'; 
+// General Components
+@import '../theme/metronic_v4.7.5/theme/sass/global/components/_typography';
+@import '../theme/metronic_v4.7.5/theme/sass/global/components/_font-icons';
 
-@import '../theme/metronic_v4.7.5/theme/sass/global/components/_modals'; 
-@import '../theme/metronic_v4.7.5/theme/sass/global/components/_panels'; 
+@import '../theme/metronic_v4.7.5/theme/sass/global/components/_modals';
+@import '../theme/metronic_v4.7.5/theme/sass/global/components/_panels';
 
 // Apply flat UI colors to all components
 @import '../theme/metronic_v4.7.5/theme/sass/global/components/_colors';
@@ -86,13 +86,14 @@ $theme-type:  'default';
 
 // BEGIN THEME PLUGINS
 // @import "../theme/metronic_v4.7.5/theme/sass/global/_plugins";
-@import '../theme/metronic_v4.7.5/theme/sass/global/_bootstrap-override'; 
+@import '../theme/metronic_v4.7.5/theme/sass/global/_bootstrap-override';
 @import '../theme/metronic_v4.7.5/theme/sass/global/plugins/_bootstrap-modal';
 
 
 @import '../theme/metronic_v4.7.5/theme/sass/global/plugins/_bootstrap-select';
-@import '../theme/metronic_v4.7.5/theme/sass/global/plugins/_select2';
-@import '../theme/metronic_v4.7.5/theme/sass/global/plugins/_socicon'; 
+@import '../theme/metronic_v4.7.5/theme/assets/global/plugins/select2/sass/select2-bootstrap.min';
+@import '../theme/metronic_v4.7.5/theme/assets/global/plugins/select2/css/select2';
+@import '../theme/metronic_v4.7.5/theme/sass/global/plugins/_socicon';
 
 // BEGIN THEME LAYOUT STYLES
 @import "../theme/metronic_v4.7.5/theme/assets/layouts/layout3/css/layout";

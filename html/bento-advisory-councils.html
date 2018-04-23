@@ -4,18 +4,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>PBS Station Experience</title>
+    <title>myPBS Member Workplace - Resource Center</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-      
+
       <link href="{{ '/member-station/fonts/font-awesome.css'|filerfile }}" rel="stylesheet" type="text/css" />
       <link href="{{ '/member-station/fonts/socicon.css'|filerfile }}" rel="stylesheet" type="text/css" />
-      
-      
+
+
 
     {% render_block "css" %}
     <link href="{{ '/member-station/pbs-site-experience.css'|filerfile }}" rel="stylesheet">
@@ -35,7 +35,7 @@
             }).track();
     };
     (function(){
-        var s=document.createElement("script"); s.async=true; s.src="{{ '/member-station/webtrends.min.js'|filerfile }}";    
+        var s=document.createElement("script"); s.async=true; s.src="{{ '/member-station/webtrends.min.js'|filerfile }}";
         var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
     }());
     </script>
@@ -52,13 +52,23 @@
       <div class="page-wrapper-row">
         <div class="page-wrapper-top">
           <div class="page-header">
-
-            <div class="page-header-menu">
+            <div class="page-header-top">
               <div class="container">
-                <a href="/" class="pbs-logo"></a>
-              </div>
-            </div>
-          </div>
+
+                <div class="row">
+
+                  <div class="col-md-3">
+                    <a href="/" class="pbs-logo"></a>
+                  </div>
+
+                </div><!-- /end - row -->
+
+              </div><!-- /end - container -->
+            </div><!-- /end - page-header-top -->
+          </div><!-- /end - page-header -->
+
+
+
         </div>
       </div><!-- /end - page-wrapper-row -->
 
@@ -68,7 +78,7 @@
           <div class="page-container">
             <div class="page-content-wrapper">
 
-              <div class="page-head pbs-section pbs-section--secondary">
+              <div class="page-head pbs-page-head pbs-section pbs-section--secondary">
                 <div class="container">
                   <div class="row">
 
@@ -79,9 +89,16 @@
                   <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <h5 class="pbs-search-form__label">Select Advisory Council</h5>
-                      <select id="section-selector" class="form-control input-lg pbs-search-form__input">
+                      <select id="section-selector" class="form-control input-lg pbs-search-form__input js-select2">
+                        <option data-table="007">Children's Media &amp; Education Station Leadership Committee (CM&amp;E SLC)</option>
+                        <option data-table="002">Development Advisory Committee (DAC)</option>
                         <option data-table="001">Digital Media Advisory Council (DMAC)</option>
-                        <option data-table="002">Some Other Section with Table</option>
+                        <option data-table="006">Digital Workplace Advisory Committee (DWAC)</option>
+                        <option data-table="005">Engineering Technology Advisory Committee (ETAC)</option>
+                        <option data-table="004">Marketing Advisory Council (MAC)</option>
+                        <option data-table="003">Programming Advisory Council (PAC)</option>
+                        <option data-table="008">Traffic Advisory Council (TAC)</option>
+                        <option data-table="009">Veterans/Stories of Service Advisory Council (VSSAC)</option>
                       </select>
                     </div>
                   </div><!-- end - row -->
@@ -94,7 +111,7 @@
 
                 <div class="page-content">
 
-                  <div id="table-section-001" class="container-wide pbs-section js-pbs-section">
+                  <div id="table-section-001" class="container-wide pbs-section pbs-section--isInvisible js-pbs-section">
                     <div class="page-content-inner">
 
                       <div class="container">
@@ -107,12 +124,13 @@
 
                         <div class="row">
 
-                          <div class="col-md-12">
+                          <div class="col-md-12 table-responsive">
 
                             <table id="table-001" class="pbs-table" cellspacing="0" width="100%">
                               <thead>
                                 <tr>
                                   <th>Name</th>
+                                  <th>Role</th>
                                   <th>Title</th>
                                   <th>Org</th>
                                   <th>Email</th>
@@ -121,7 +139,7 @@
                                 </tr>
                               </thead>
                               <tbody>
-                                
+
                               {% placeholder Digital_Media_Advisory_Council_(DMAC) inherit%}
 
                               </tbody>
@@ -146,18 +164,19 @@
 
                         <div class="row">
                           <div class="col-md-12">
-                            <h2 class="pbs-section__title">Some Other Section with Table</h2>
+                            <h2 class="pbs-section__title">Development Advisory Committee (DAC)</h2>
                           </div>
                         </div>
 
                         <div class="row">
 
-                          <div class="col-md-12">
+                          <div class="col-md-12 table-responsive">
 
                             <table id="table-002" class="pbs-table" cellspacing="0" width="100%">
                               <thead>
                                 <tr>
                                   <th>Name</th>
+                                  <th>Role</th>
                                   <th>Title</th>
                                   <th>Org</th>
                                   <th>Email</th>
@@ -166,8 +185,8 @@
                                 </tr>
                               </thead>
                               <tbody>
-                                
-                              {% placeholder Other inherit%}
+
+                              {% placeholder Development_Advisory_Committee_(DAC) inherit%}
 
                               </tbody>
                             </table>
@@ -181,6 +200,357 @@
 
                     </div><!-- /page-content-inner -->
                   </div><!-- /pbs-section -->
+
+
+
+                  <div id="table-section-003" class="container-wide pbs-section pbs-section--isInvisible js-pbs-section">
+                    <div class="page-content-inner">
+
+                      <div class="container">
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h2 class="pbs-section__title">Programming Advisory Council (PAC)</h2>
+                          </div>
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-md-12 table-responsive">
+
+                            <table id="table-003" class="pbs-table" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Role</th>
+                                  <th>Title</th>
+                                  <th>Org</th>
+                                  <th>Email</th>
+                                  <th>Phone</th>
+                                  <th>Council Name</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                              {% placeholder Programming_Advisory_Council_(PAC) inherit%}
+
+                              </tbody>
+                            </table>
+
+                          </div><!-- end - col -->
+                        </div><!-- end - row -->
+
+
+
+                      </div><!-- /container -->
+
+                    </div><!-- /page-content-inner -->
+                  </div><!-- /pbs-section -->
+
+
+
+
+                  <div id="table-section-004" class="container-wide pbs-section pbs-section--isInvisible js-pbs-section">
+                    <div class="page-content-inner">
+
+                      <div class="container">
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h2 class="pbs-section__title">Marketing Advisory Council (MAC)</h2>
+                          </div>
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-md-12 table-responsive">
+
+                            <table id="table-004" class="pbs-table" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Role</th>
+                                  <th>Title</th>
+                                  <th>Org</th>
+                                  <th>Email</th>
+                                  <th>Phone</th>
+                                  <th>Council Name</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                              {% placeholder Marketing_Advisory_Council_(MAC) inherit%}
+
+                              </tbody>
+                            </table>
+
+                          </div><!-- end - col -->
+                        </div><!-- end - row -->
+
+
+
+                      </div><!-- /container -->
+
+                    </div><!-- /page-content-inner -->
+                  </div><!-- /pbs-section -->
+
+
+
+
+                  <div id="table-section-005" class="container-wide pbs-section pbs-section--isInvisible js-pbs-section">
+                    <div class="page-content-inner">
+
+                      <div class="container">
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h2 class="pbs-section__title">Engineering Technology Advisory Committee (ETAC)</h2>
+                          </div>
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-md-12 table-responsive">
+
+                            <table id="table-005" class="pbs-table" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Role</th>
+                                  <th>Title</th>
+                                  <th>Org</th>
+                                  <th>Email</th>
+                                  <th>Phone</th>
+                                  <th>Council Name</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                              {% placeholder Engineering_Technology_Advisory_Committee_(ETAC) inherit%}
+
+                              </tbody>
+                            </table>
+
+                          </div><!-- end - col -->
+                        </div><!-- end - row -->
+
+
+
+                      </div><!-- /container -->
+
+                    </div><!-- /page-content-inner -->
+                  </div><!-- /pbs-section -->
+
+
+
+
+                  <div id="table-section-006" class="container-wide pbs-section pbs-section--isInvisible js-pbs-section">
+                    <div class="page-content-inner">
+
+                      <div class="container">
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h2 class="pbs-section__title">Digital Workplace Advisory Committee (DWAC)</h2>
+                          </div>
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-md-12 table-responsive">
+
+                            <table id="table-006" class="pbs-table" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Role</th>
+                                  <th>Title</th>
+                                  <th>Org</th>
+                                  <th>Email</th>
+                                  <th>Phone</th>
+                                  <th>Council Name</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                              {% placeholder Digital_Workplace_Advisory_Committee_(DWAC) inherit%}
+
+                              </tbody>
+                            </table>
+
+                          </div><!-- end - col -->
+                        </div><!-- end - row -->
+
+
+
+                      </div><!-- /container -->
+
+                    </div><!-- /page-content-inner -->
+                  </div><!-- /pbs-section -->
+
+
+
+
+                  <div id="table-section-007" class="container-wide pbs-section js-pbs-section">
+                    <div class="page-content-inner">
+
+                      <div class="container">
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h2 class="pbs-section__title">Children's Media &amp; Education Station Leadership Committee (CM&amp;E SLC)</h2>
+                          </div>
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-md-12 table-responsive">
+
+                            <table id="table-007" class="pbs-table" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Role</th>
+                                  <th>Title</th>
+                                  <th>Org</th>
+                                  <th>Email</th>
+                                  <th>Phone</th>
+                                  <th>Council Name</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                              {% placeholder Childrens_Media_Education_Station_(CMESLC) inherit%}
+
+                              </tbody>
+                            </table>
+
+                          </div><!-- end - col -->
+                        </div><!-- end - row -->
+
+
+
+                      </div><!-- /container -->
+
+                    </div><!-- /page-content-inner -->
+                  </div><!-- /pbs-section -->
+
+
+
+
+                  <div id="table-section-008" class="container-wide pbs-section pbs-section--isInvisible js-pbs-section">
+                    <div class="page-content-inner">
+
+                      <div class="container">
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h2 class="pbs-section__title">Traffic Advisory Council (TAC)</h2>
+                          </div>
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-md-12 table-responsive">
+
+                            <table id="table-008" class="pbs-table" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Role</th>
+                                  <th>Title</th>
+                                  <th>Org</th>
+                                  <th>Email</th>
+                                  <th>Phone</th>
+                                  <th>Council Name</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                              {% placeholder Traffic_Advisory_Council_(TAC) inherit%}
+
+                              </tbody>
+                            </table>
+
+                          </div><!-- end - col -->
+                        </div><!-- end - row -->
+
+
+
+                      </div><!-- /container -->
+
+                    </div><!-- /page-content-inner -->
+                  </div><!-- /pbs-section -->
+
+
+
+                  <div id="table-section-009" class="container-wide pbs-section pbs-section--isInvisible js-pbs-section">
+                    <div class="page-content-inner">
+
+                      <div class="container">
+
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h2 class="pbs-section__title">Veterans/Stories of Service Advisory Council (VSSAC)</h2>
+                          </div>
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-md-12 table-responsive">
+
+                            <table id="table-009" class="pbs-table" cellspacing="0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Role</th>
+                                  <th>Title</th>
+                                  <th>Org</th>
+                                  <th>Email</th>
+                                  <th>Phone</th>
+                                  <th>Council Name</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+
+                              {% placeholder Veterans_Stories_of_Service_(VSSAC) inherit%}
+
+                              </tbody>
+                            </table>
+
+                          </div><!-- end - col -->
+                        </div><!-- end - row -->
+
+
+
+                      </div><!-- /container -->
+
+                    </div><!-- /page-content-inner -->
+                  </div><!-- /pbs-section -->
+
+
+
+
+
+
+                  <div id="nav-help" class="container-wide pbs-section pbs-section--help-bg">
+                <div class="page-content-inner">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="pbs-section__title pbs-section__title--white">Help</h2>
+
+                        <div class="row">
+
+                          {% placeholder Help inherit%}
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /end pbs-section -->
 
 
 
@@ -204,6 +574,9 @@
 
     <script>
       $(document).ready(function() {
+        $('.js-select2').select2({
+          minimumResultsForSearch: Infinity
+        });
         $('#section-selector').change(function(){
           var table = $('#section-selector option:selected').data('table');
           table = "#table-section-" + table;
@@ -211,23 +584,20 @@
           console.log(table);
           $(table).removeClass('pbs-section--isInvisible');
         });
-        $('#table-001').DataTable({
+        $('#table-001, #table-002, #table-003, #table-004, #table-005, #table-006, #table-007, #table-008, #table-009').DataTable({
           "paging": false,
           "info": false,
           "searching": false,
           "columnDefs": [{
-            "targets": [4,5],
-            "orderable": false
-          }]
-        });
-        $('#table-002').DataTable({
-          "paging": false,
-          "info": false,
-          "searching": false,
-          "columnDefs": [{
-            "targets": [4,5],
-            "orderable": false
-          }]
+            "targets": [5],
+            "width": "145px",
+            "orderable": false,
+          },
+          {
+            "targets": [6],
+            "width": "100px",
+            "orderable": false,
+          }],
         });
       });
     </script>
@@ -245,4 +615,6 @@
     <!-- End of LiveChat code -->
 
   </body>
-</html>​
+</html>
+
+​

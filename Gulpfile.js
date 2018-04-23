@@ -25,6 +25,7 @@ gulp.task('js', function() {
       './theme/metronic_v4.7.5/theme/assets/global/plugins/datatables/datatables.min.js',
       './theme/metronic_v4.7.5/theme/assets/global/scripts/app.min.js',
       './theme/metronic_v4.7.5/theme/assets/pages/scripts/ui-sweetalert.min.js',
+      './theme/metronic_v4.7.5/theme/assets/global/plugins/select2/js/select2.js',
       './js/layout.js'
     ])
     .pipe(concat('app.js'))

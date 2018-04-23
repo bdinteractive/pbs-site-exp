@@ -2,16 +2,28 @@
 <!-- SmartSnippets Variables
 First_Name=TextField
 Last_Name=TextField
+Role=TextField
 Title=TextField
 Org=TextField
 Email=TextField
 Phone_Number=TextField
-Council_Name=TextField
+DMAC=Select|values=true,false
+DAC=Select|values=true,false
+PAC=Select|values=true,false
+MAC=Select|values=true,false
+ETAC=Select|values=true,false
+DWAC=Select|values=true,false
+CMESLC=Select|values=true,false
+TAC=Select|values=true,false
+VSSAC=Select|values=true,false
 -->
 {% endcomment %}
 <tr>
   <td class="">
     <span class="pbs-table__u-txt-highlight">{{Last_Name}}, {{First_Name}}</span>
+  </td>
+  <td class="">
+    {{Role}}
   </td>
   <td class="">
     {{Title}}
@@ -26,8 +38,32 @@ Council_Name=TextField
     {{Phone_Number}}
   </td>
   <td class="">
-    {{Council_Name}}
+    {% if DMAC %}
+      <a href="javascript:;" class="tooltips" data-original-title="Digital Media Advisory Council">DMAC</a><br>
+    {% endif %}
+    {% if DAC %}
+      <a href="javascript:;" class="tooltips" data-original-title="Development Advisory Committee">DAC</a><br>
+    {% endif %}
+    {% if PAC %}
+      <a href="javascript:;" class="tooltips" data-original-title="Programming Advisory Council">PAC</a><br>
+    {% endif %}
+    {% if MAC %}
+      <a href="javascript:;" class="tooltips" data-original-title="Marketing Advisory Council">MAC</a><br>
+    {% endif %}
+    {% if ETAC %}
+      <a href="javascript:;" class="tooltips" data-original-title="Engineering Technology Advisory Committee">ETAC</a><br>
+    {% endif %}
+    {% if DWAC %}
+      <a href="javascript:;" class="tooltips" data-original-title="Digital Workplace Advisory Committee">DWAC</a><br>
+    {% endif %}
+    {% if CMESLC %}
+      <a href="javascript:;" class="tooltips" data-original-title="Children's Media & Education Station Leadership Committee">CM&amp;E SLC</a><br>
+    {% endif %}
+    {% if TAC %}
+      <a href="javascript:;" class="tooltips" data-original-title="Traffic Advisory Council">TAC</a><br>
+    {% endif %}
+    {% if VSSAC %}
+      <a href="javascript:;" class="tooltips" data-original-title="Veterans/Stories of Service Advisory Council">VSSAC</a><br>
+    {% endif %}
   </td>
 </tr>
-
-

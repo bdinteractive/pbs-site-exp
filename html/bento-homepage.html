@@ -3,18 +3,25 @@
 <html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>PBS Station Experience</title>
+    <title>myPBS Member Workplace - Resource Center</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+
+    <link rel="icon" href="{{ '/member-station/favicon.ico'|filerfile }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ '/member-station/favicon.ico'|filerfile }}" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/member-station/img/favicon-32x32.png'|filerfile }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/member-station/img/favicon-96x96.png'|filerfile }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/member-station/img/favicon-16x16.png'|filerfile }}">
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-      
+
       <link href="{{ '/member-station/fonts/font-awesome.css'|filerfile }}" rel="stylesheet" type="text/css" />
       <link href="{{ '/member-station/fonts/socicon.css'|filerfile }}" rel="stylesheet" type="text/css" />
-      
-      
+
+
 
     {% render_block "css" %}
     <link href="{{ '/member-station/pbs-site-experience.css'|filerfile }}" rel="stylesheet">
@@ -34,7 +41,7 @@
             }).track();
     };
     (function(){
-        var s=document.createElement("script"); s.async=true; s.src="{{ '/member-station/webtrends.min.js'|filerfile }}";    
+        var s=document.createElement("script"); s.async=true; s.src="{{ '/member-station/webtrends.min.js'|filerfile }}";
         var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
     }());
     </script>
@@ -47,75 +54,76 @@
   {% cms_toolbar %}
 
     <div class="page-wrapper">
+
       <div class="page-wrapper-row">
-
         <div class="page-wrapper-top">
-          <div class="page-header">
 
-            <div class="page-header-menu">
+          <div class="page-header">
+            <div class="page-header-top">
               <div class="container">
 
                 <div class="row">
 
-                  <div class="col-md-2">
+                  <div class="col-lg-3">
                     <a href="/" class="pbs-logo"></a>
+                    <a href="javascript:;" class="menu-toggler"></a>
                   </div>
-                  <div class="col-md-10">
-                    <div class="">
-                      <div class="row">
 
-                        <div class="col-md-12">
-                          <div class="hor-menu pull-right pbs-utils-menu">
-                            <ul class="nav navbar-nav">
-                              <li aria-haspopup="true" class="">
-                                <a href="#" class="">Discussion Forums</a>
-                              </li>
-                              <li aria-haspopup="true" class="">
-                                <a href="#">Station Announcements</a>
-                              </li>
-                            </ul>
-                          </div><!-- /end - hor-menu -->
+                  <div class="col-md-9">
+                    <div class="page-header-menu">
+
+                      <div class="col-md-12">
+                        <div class="hor-menu pbs-utils-menu">
+                          <ul class="nav navbar-nav">
+                            <li aria-haspopup="true" class="">
+                              <a href="/discussion-forums" class="">Discussion Forums</a>
+                            </li>
+                            <li aria-haspopup="true" class="">
+                              <a href="http://mypbs.org/announcements/" target="_blank">Station Announcements</a>
+                            </li>
+                          </ul>
                         </div>
-
-                        <div class="col-md-12">
-                          <div class="hor-menu pull-right pbs-pri-menu">
-                            <ul class="nav navbar-nav">
-                              <li aria-haspopup="true" class="">
-                                <a href="/#nav-resources" class="js-nav-resources">Resources</a>
-                              </li>
-                              <li aria-haspopup="true" class="js-nav-events">
-                                <a href="/#nav-events">Events</a>
-                              </li>
-                              <li aria-haspopup="true" class="js-nav-newsletters">
-                                <a href="/#nav-newsletters">Newsletters</a>
-                              </li>
-                              <li aria-haspopup="true" class="js-nav-faq">
-                                <a href="/#nav-faq">FAQ</a>
-                              </li>
-                              <li aria-haspopup="true" class="js-nav-help">
-                                <a href="/#nav-help">Help</a>
-                              </li>
-                              <li aria-haspopup="true" class="">
-                                <a href="/people">
-                                  <i class="fa fa-search"></i>
-                                  Search for People
-                                </a>
-                              </li>
-                            </ul>
-                          </div><!-- /end - hor-menu -->
-                        </div>
-
                       </div>
-                    </div>
-                  </div>
 
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
+                      <div class="col-md-12">
+                        <div class="hor-menu pbs-pri-menu">
+                          <ul class="nav navbar-nav">
+                            <li aria-haspopup="true" class="">
+                              <a href="/#nav-resources" class="js-nav-resources">Resources</a>
+                            </li>
+                            <li aria-haspopup="true" class="js-nav-events">
+                              <a href="/#nav-events">Events</a>
+                            </li>
+                            <li aria-haspopup="true" class="js-nav-newsletters">
+                              <a href="/#nav-newsletters">Newsletters</a>
+                            </li>
+                            <li aria-haspopup="true" class="js-nav-faq">
+                              <a href="/#nav-faq">FAQ</a>
+                            </li>
+                            <li aria-haspopup="true" class="js-nav-help">
+                              <a href="/#nav-help">Help</a>
+                            </li>
+                            <li aria-haspopup="true" class="">
+                              <a href="http://dev.people.pbs.org/" target=_blank>
+                                <i class="fa fa-search"></i>
+                                Search for People
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
 
+                    </div><!-- /end - page-header-menu -->
+
+                  </div><!-- /end - col-9 -->
+
+                </div><!-- /end - row -->
+
+              </div><!-- /end - container -->
+            </div><!-- /end - page-header-top -->
+          </div><!-- /end - page-header -->
+
+        </div><!-- /end - page-wrapper-top -->
       </div><!-- /end - page-wrapper-row -->
 
       <div class="page-wrapper-row full-height">
@@ -159,15 +167,11 @@
 
               <div class="container-wide">
                 <div class="page-content-inner">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="pbs-mostPopular">
-                        <nav class="pbs-mostPopular__nav container">
-                          <span class="pbs-mostPopular__title">Most Popular: </span>
-                          {% placeholder most-popular inherit%}
-                        </nav>
-                      </div>
-                    </div>
+                  <div class="pbs-mostPopular">
+                    <nav class="pbs-mostPopular__nav container">
+                      <span class="pbs-mostPopular__title">Most Popular: </span>
+                      {% placeholder most-popular inherit%}
+                    </nav>
                   </div>
                 </div>
               </div><!-- /end pbs-section -->
@@ -184,7 +188,7 @@
                           <span class="js-dd-text" data-pri-text="Hide Descriptions" data-alt-text="Show Descriptions">Hide Descriptions</span>
                         </button>
                         <button class="btn pbs-btn pbs-btn--primary btn-lg pbs-departments-toggle" type="button">
-                          <span class="js-ad-text" data-pri-text="View Applications Only" data-alt-text="View Disciplines Only">View Applications Only</span>
+                          <span class="js-ad-text" data-pri-text="View Resources A-Z" data-alt-text="View Discipline Cards">View Resources A-Z</span>
                         </button>
                       </nav>
                     </div>
@@ -198,12 +202,12 @@
 
                   <div class="row js-department js-departments pbs-departments">
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 table-responsive">
 
-                      <table id="departments-table" class="pbs-table" cellspacing="0" width="100%">
+                      <table id="departments-table" class="pbs-table table table-responsive">
                         <thead>
                           <tr>
-                            <th>Application Name</th>
+                            <th>Resource Name</th>
                             <th>Description</th>
                             <th>PBS Discipline</th>
                           </tr>
@@ -233,11 +237,11 @@
                       <div class="col-md-12">
                         <h2 class="pbs-section__title">Events</h2>
                       </div>
-                        
+
                         <div class="col-md-12 pbs-events js-showHide-wrapper">
-                        
+
                           {% placeholder events inherit%}
-                            
+
                         </div>
 
                     </div><!-- /end row -->
@@ -245,7 +249,7 @@
                     <div class="row">
                       <div class="col-md-12 text-center">
                         <button class="btn pbs-btn pbs-btn--secondary btn-lg js-showHide-btn" type="button">
-                          <i class="fa fa-plus js-showHide-btn-ico" aria-hidden="true"></i> 
+                          <i class="fa fa-plus js-showHide-btn-ico" aria-hidden="true"></i>
                           <span class="js-showHide-btn-txt" data-pri-text="Show More Events" data-alt-text="Show Fewer Events" data-alt="">Show More Events</span>
                         </button>
                     </div>
@@ -266,7 +270,7 @@
                       <h2 class="pbs-section__title">Newsletters</h2>
                     </div>
                     <div class="col-md-12 pbs-newsletters">
-                        
+
                         {% placeholder Newsletters inherit%}
 
 
@@ -284,7 +288,7 @@
                         <h2 class="pbs-section__title">FAQ</h2>
 
                         <div class="panel-group accordion pbs-faq js-showHide-wrapper">
-                            
+
                             {% placeholder FAQ inherit%}
 
                         </div><!-- end panel-group  -->
@@ -293,7 +297,7 @@
 
                       <div class="col-md-12 text-center">
                         <button class="btn pbs-btn pbs-btn--primary btn-lg js-showHide-btn" type="button">
-                          <i class="fa fa-plus js-showHide-btn-ico" aria-hidden="true"></i> 
+                          <i class="fa fa-plus js-showHide-btn-ico" aria-hidden="true"></i>
                           <span class="js-showHide-btn-txt" data-pri-text="Show More FAQ" data-alt-text="Show Less FAQ" data-alt="">Show More FAQ</span>
                         </button>
                       </div>
@@ -323,7 +327,7 @@
               </div><!-- /end pbs-section -->
 
             </div><!-- end - page-content -->
-            
+
           </div><!-- end - page-content-wrapper -->
         </div><!-- end - page-container -->
       </div><!-- end - page-wrapper-middle -->
@@ -374,7 +378,7 @@
 
         var departmentVisible = Cookies.get('pbs-dv');
         if(departmentVisible == "1"){
-          $('.js__department').toggle();
+          $('.js__department p').toggle();
           var textNode = $('.js-dd-text');
           var _text = $('.js-dd-text').text();
           var priText = $('.js-dd-text').data('pri-text');
@@ -414,7 +418,7 @@
             Cookies.set('pbs-dv', '0');
           }
 
-          $('.js__department').toggle();
+          $('.js__department p').toggle();
           var textNode = $('.js-dd-text');
           var _text = $('.js-dd-text').text();
           var priText = $('.js-dd-text').data('pri-text');
@@ -456,7 +460,7 @@
             $(id).parents('.js-showHide-wrapper').css('height', parentHeight);
           }, 500);
         });
-        
+
         $('.pbs-departments-toggle').on("click", function(){
             var cookie = Cookies.get('pbs-dt');
             if(typeof cookie == 'undefined' || cookie == "0"){
@@ -471,6 +475,7 @@
             var altText = $('.js-ad-text').data('alt-text');
             if(_text == priText){
               textNode.text(altText);
+
             } else {
               textNode.text(priText);
             }
@@ -529,4 +534,7 @@
     <!-- End of LiveChat code -->
 
   </body>
-</html>​
+</html>
+
+
+​
