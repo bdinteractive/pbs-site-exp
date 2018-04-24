@@ -195,6 +195,7 @@ h4.media-heading {
   width: 245px;
   margin-top: 27px;
   background-image: url(img/Online_Horz_Corporate_Blk.png);
+  // background-image: url(img/workplace-logo.png);
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1127,6 +1128,11 @@ ol, ul {
 .pbs-search-form__input {
   border-radius: 0;
   border: none;
+}
+@media (max-width: $screen-lg-min) {
+  .pbs-search-form__input {
+    margin-bottom: 10px;
+  }
 }
 .pbs-search-form__button {
   margin-top: 40px;

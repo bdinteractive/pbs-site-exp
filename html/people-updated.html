@@ -74,25 +74,35 @@
                           <option>Option 5</option>
                         </select>
                       </div>
-                      <div class="col-md-3">
-                        <h5 class="pbs-search-form__label">State</h5>
-                        <select class="form-control input-lg pbs-search-form__input">
-                          <option>Option 1</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
-                          <option>Option 5</option>
-                        </select>
-                      </div>
-                      <div class="col-md-3">
-                        <h5 class="pbs-search-form__label">Organization</h5>
-                        <select class="form-control input-lg pbs-search-form__input">
-                          <option>Option 1</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
-                          <option>Option 5</option>
-                        </select>
+                      <div class="col-md-6 has-error">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <h5 class="pbs-search-form__label">Location</h5>
+                          </div>
+                          <div class="col-sm-6">
+                            <select class="form-control input-lg pbs-search-form__input">
+                              <option>State</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-6">
+                            <select class="form-control input-lg pbs-search-form__input">
+                              <option>Organization</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-12">
+                            <label class="control-label">Please select an organization first, then click 'search' again.</label>
+                          </div>
+                        </div>
                       </div>
                       <div class="col-md-2">
                         <div class="input-group input-group-lg">
@@ -130,7 +140,7 @@
                   </div>
 
                   <div class="row pbs-people-table pbs-people-table--isVisible js-pbs-people-table">
-                    <div class="col-md-12">
+                    <div class="col-md-12 table-responsive">
 
                       <table id="people-table" class="pbs-table" cellspacing="0" width="100%">
                         <thead>
@@ -215,6 +225,7 @@
                       </table>
 
                     </div>
+
                   </div><!-- /row -->
 
                   <div class="row pbs-people-tiles js-pbs-people-tiles">
@@ -296,6 +307,32 @@
                     </div>
 
                   </div>
+
+                  <nav class="text-center">
+                      <ul class="pagination">
+                          <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                      </ul>
+                  </nav>
+
                 </div>
               </div><!-- /end pbs-section -->
 
@@ -447,15 +484,15 @@
           $('.js-pbs-people-tiles').toggleClass('pbs-people-tiles--isVisible');
           $('.js-pbs-people-table').toggleClass('pbs-people-table--isVisible');
         });
-        $('#people-table').DataTable({
-          "paging": false,
-          "info": false,
-          "searching": false,
-          "columnDefs": [{
-            "targets": [3,4],
-            "orderable": false
-          }]
-        });
+        // $('#people-table').DataTable({
+        //   "paging": false,
+        //   "info": false,
+        //   "searching": false,
+        //   "columnDefs": [{
+        //     "targets": [3,4],
+        //     "orderable": false
+        //   }]
+        // });
       });
     </script>
 
