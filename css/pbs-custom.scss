@@ -867,16 +867,41 @@ h4.media-heading {
 .pbs-table tbody td:last-child {
   padding-right: 30px;
 }
-
 .pbs-table__u-txt-highlight {
   color: #52044a;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 th, td {
   border: none;
 }
+
+@media (max-width: $screen-sm-min) {
+  .pbs-table thead {
+    display: none;
+  }
+  .pbs-table tbody td {
+    padding: 0 20px;
+    float: left;
+    width: 100%;
+  }
+  .pbs-table tbody td:first-child {
+    padding-top: 20px;
+  }
+  .pbs-table tbody td:last-child {
+    padding-bottom: 20px;
+  }
+}
+
+.pbs-people-error {
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+
+
+
+
 
 
 table.dataTable thead .sorting,
@@ -1136,6 +1161,11 @@ ol, ul {
 }
 .pbs-search-form__button {
   margin-top: 40px;
+}
+.pbs-search-form__error {
+  color: white;
+  font-size: 16px;
+  padding-top: 10px;
 }
 
 
