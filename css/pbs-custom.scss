@@ -1163,6 +1163,12 @@ ol, ul {
   margin-top: 40px;
 }
 .pbs-search-form__error {
+  padding-top: 20px;
+}
+.pbs-search-form__location {
+  border: solid 1px white;
+}
+.pbs-search-form__error-message {
   color: white;
   font-size: 16px;
   padding-top: 10px;
