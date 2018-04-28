@@ -1150,6 +1150,9 @@ ol, ul {
   font-weight: 700;
   margin-bottom: 10px;
 }
+.pbs-search-form__label--top {
+  margin-top: 15px;
+}
 .pbs-search-form__input {
   border-radius: 0;
   border: none;
@@ -1172,8 +1175,16 @@ ol, ul {
   color: white;
   font-size: 16px;
   padding-top: 10px;
+  margin-bottom: 10px;
 }
-
+.pbs-search-form__submit {
+  text-align: right;
+}
+@media (max-width: $screen-lg-min) {
+  .pbs-search-form__submit {
+    text-align: left;
+  }
+}
 
 .pbs-switch {
   height: 52px;
